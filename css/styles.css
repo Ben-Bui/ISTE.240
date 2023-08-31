@@ -1,0 +1,28 @@
+.sub{
+    font-style: italic;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 1.5;
+}  
+.container{
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    border: 5px solid white;
+}
+h1{
+    font-weight: bold;
+    text-align: center ;
+    font-size: 5em;
+    color: blue;
+}
+body{
+    background-color: black;
+    color: white;
+}
+h2{
+    color: blue;
+}

@@ -18,11 +18,77 @@ h1{
     text-align: center ;
     font-size: 5em;
     color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body{
-    background-color: black;
+    background-image: ;
     color: white;
 }
-h2{
+
+figure{
+    float: left;
+}
+h2 {
+    font: italic;
+    font-weight: normal;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;   
     color: blue;
+}
+ul{
+    flex-grow: auto;
+}
+a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+  a:hover {
+    background-position: 0;
+   }
+   a:hover::before {
+    width: 100%;
+  }
+  a {
+    background-image: linear-gradient(
+      to right,
+      #ff0000,
+      #ff0000 50%,
+      violet 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  h3 {
+    font: italic;
+    font-weight: normal;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    color: blue;
+}
+.scaleable { width: 100%; }
+.limited-250 { max-width: 500px; }
+.padding{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+nav{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
 }

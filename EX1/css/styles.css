@@ -98,7 +98,6 @@ a:before {
   h3 {
     font: italic;
     font-weight: normal;
-    display: flex;
     flex-grow: 1;
     flex-basis: 100%;
     color: blue;

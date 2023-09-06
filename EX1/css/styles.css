@@ -41,7 +41,7 @@ figure{
     float: left;
 }
 .scaleable { width: 100%; }
-.limited { max-width: 500px; }
+.limited { max-width: 400px; }
 
 /* Simple title make center like header */
 h2 {

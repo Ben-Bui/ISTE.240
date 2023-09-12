@@ -1,4 +1,4 @@
-/* step1 */
+/* step1 navigation bar*/
 .navigation{
     display: flex;
     justify-content: space-around;
@@ -8,7 +8,7 @@
     border-bottom: 2px solid black;
 }
 /* step2
-using bacground image */
+using bacground image given by teacher*/
 body{
     background-image: url(../images/side.jpg);
     /* Reapeat it vertically */
@@ -17,15 +17,17 @@ body{
     margin: 0px; 
     padding: 0px; 
 }
+/* Making columns 2x2 have to google this bit*/
 .boxes{
-    margin-left: 200px;
     display: inline-grid;
     grid-template-columns: repeat(2, [col-start] 1fr);
     grid-gap: 10px;
+    margin-left: 200px;
+
 }
+/* Making the container for each name of flower green,font size,color,and type */
 .flowertype{
-    padding: 10px;
-    border-radius: 30px;
+    padding: 5px;
     display: flex;
     color: rgb(203, 153, 255);
     align-items: center;
@@ -35,28 +37,32 @@ body{
     font-size: 30px;
     font-style: bold;
     text-align: center;
+    border-radius: 30px;
+
 }
+/* Making asterisk big, change color, make shadow */
 .star{
     font-size: 120px;
     color: green;
     text-shadow:3px 3px  yellow;
 }
+/* add hover color bacground and change cursor */
 .flowertype:hover{
     background-color: purple;
     transition: 1s;
     cursor: pointer;
 }
-@media screen and (max-width: 500px) and (max-width:600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+/* change the grid to 1 row 4 columns */
+@media only screen and (max-width:600px) {
+    .boxes {
+        
+    grid-template-columns: auto;
     }
-@media screen and (max-width:600px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+    /* cant make picture gone */
+@media only screen and (max-width:500px) {
+    .boxes {
+        grid-template-columns: auto;
+        background-image: none;
     }    
 }
 }

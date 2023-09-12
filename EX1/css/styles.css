@@ -24,17 +24,17 @@ h1{
 }
 /* Simple, minimalist for the assingment, may change into blur family picture in the future */
 body{
-    background-color: black;
-    color: white;
-    /* background-image: url(../images/family_PIC.JPG);
+    /* background-color: black;
+    color: white; */
+    background-image: url(../images/family_PIC.JPG);
     
-      Add the blur effect
+      /* Add the blur effect */
     backdrop-filter: blur(8px);
-    Center and scale the image nicely
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: black; */
+    color: black;
 }
 /* make picture go left, also remember to limit the size, also make to be scaleable*/
 figure{

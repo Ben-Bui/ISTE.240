@@ -1,0 +1,62 @@
+/* step1 */
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    /* Have to change the lightblue up to math the picture */
+    background-color: rgb(92, 201, 238);
+    padding: 15px;
+    border-bottom: 2px solid black;
+}
+/* step2
+using bacground image */
+body{
+    background-image: url(../images/side.jpg);
+    /* Reapeat it vertically */
+    background-repeat:repeat-y; 
+    /* Add this so it would like the example picture */
+    margin: 0px; 
+    padding: 0px; 
+}
+.boxes{
+    margin-left: 200px;
+    display: inline-grid;
+    grid-template-columns: repeat(2, [col-start] 1fr);
+    grid-gap: 10px;
+}
+.flowertype{
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    color: rgb(203, 153, 255);
+    align-items: center;
+    background-color: rgb(59, 86, 16);
+    width: 180px;
+    height: 150px;
+    font-size: 30px;
+    font-style: bold;
+    text-align: center;
+}
+.star{
+    font-size: 120px;
+    color: green;
+    text-shadow:3px 3px  yellow;
+}
+.flowertype:hover{
+    background-color: purple;
+    transition: 1s;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+@media screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }    
+}
+}

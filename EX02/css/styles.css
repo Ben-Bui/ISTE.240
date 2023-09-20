@@ -17,7 +17,9 @@ body{
     margin: 0px; 
     padding: 0px; 
 }
-/* Making columns 2x2 have to google this bit*/
+/* Making columns 2x2 have to google this bit
+Citation
+https://stackoverflow.com/questions/55174404/how-to-make-2x2-image-grid-css*/
 .boxes{
     display: inline-grid;
     grid-template-columns: repeat(2, [col-start] 1fr);
@@ -46,7 +48,8 @@ body{
     color: green;
     text-shadow:3px 3px  yellow;
 }
-/* add hover color bacground and change cursor */
+/* add hover color bacground and change cursor Citation
+https://www.tutorialrepublic.com/codelab.php?topic=faq&file=css-make-the-cursor-a-hand-pointer-on-hover*/
 .flowertype:hover{
     background-color: purple;
     transition: 1s;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .dropdown ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+
+            margin: 0px;
+            padding:0px;
+
+            background:lightblue;
+        }
+
+
+        .dropdown li{
+            padding: 10px;
+            position: relative;
+        }
+        
+        .dropdown .submenu{
+            flex-direction: column;
+            position: absolute;
+            top: 38px;
+
+            background:orange;
+
+            opacity:0 ;
+            visibility: hidden;
+            
+        }
+
+        .dropdown li:hover{
+            background: red;
+        }
+        
+        .dropdown li:hover .submenu{
+            visibility: visible;
+            opacity: 100;
+        }
+
+
+    </style>
+
+    <h1>The Nav</h1>
+
+    <nav class="dropdown">
+        <ul>
+            <li><a href="#">Home </a></li>
+            <li>
+                <a href="#">Program </a> 
+                <ul class="submenu">
+                    <li> <a href="#">After School</a></li>
+                    <li> <a href="#">Before School</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Program </a> 
+                <ul class="submenu">
+                    <li> <a href="#">After School</a></li>
+                    <li> <a href="#">Before School</a></li>
+                </ul>
+        </li>
+        </ul>
+        Home
+        Program
+            - before schol
+            - afterschool
+
+    </nav>
+    
+</body>
+</html>

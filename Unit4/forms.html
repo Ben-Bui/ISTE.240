@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form .formelement{
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="process.php" method="post">
+        <fieldset>
+            <legend>General Information</legend>
+            <div class="formelement:">
+                <label>Lastname:</label> 
+                <input name="lastname" id="lastname" type="text" required>
+            </div>
+            <div class="formelement:">
+                <label>Your Favorite Number between 1 and 10:</label> 
+                <input name="favnum" id="favnum" type="number" min= "1'" max="10">
+            </div>
+        </fieldset>
+        <div class="formelement:">
+            <label>How do you like me?:</label> 
+            <input name="likeme" id="likeme" type="range" min="1" max="11" value="9">
+        </div>
+        <div class="formelement:">
+        <label>Favorite Color:</label> 
+        <br/>
+        <input name="favcolor" id="favcolor" value="red" type="radio"> Red <br/>
+        <input name="favcolor" id="favcolor" value="blue" type="radio"> Blue <br/>
+        <input name="favcolor" id="favcolor" value="green" type="radio"> Green <br/>
+
+        </div>
+        
+        <input type="submit"><br/>
+            <input type="date" required />
+    </form>
+    
+</body>
+</html>

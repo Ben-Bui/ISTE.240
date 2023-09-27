@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Assignment 4</title>
+
+</head>
+<body>
+<!-- He told us to customize a little as possible so I start with the logo for my website -->
+    <figure>
+        <img src="img/welcome.JPG" id="logo" >
+    </figure>
+    <nav class="dropdown">
+        <ul>
+            <li>
+                    <!-- Use what I learn in class -->
+
+                <a href="#">Home </a> 
+                <ul class="submenu">
+                    <li> <a href="#">General Information</a></li>
+                </ul>
+            </li>
+            <!-- Can't figure out how to put the | so do this for now, might need to learn more -->
+            <li> | </li>
+    <!--Add some of my own stuff for the future, since my website would require the samething  -->
+
+            <li>
+                <a href="#">Activities</a> 
+                <ul class="submenu">
+                    <li> <a href="#">The British Museum</a></li>
+                    <li> <a href="#">The Tower of London</a></li>
+                    <li> <a href="#">Buckingham Palace</a></li>
+                    <li> <a href="#">The Houses of Parliament and Big Ben</a></li>
+                    <li> <a href="#">Westminster Abbey</a></li>
+                    <li> <a href="#">The Tate Modern</a></li>
+                </ul>
+            </li>
+            <li> | </li>
+            <!-- Use my food place that I have search up, should proof usefull in the future -->
+            <li>
+                <a href="#">Food</a> 
+                <ul class="submenu">
+                    <li> <a href="#">British: St. John</a></li>
+                    <li> <a href="#">Café Cecilia</a></li>
+                    <li> <a href="#">Quo Vadis</a></li>
+                    <li> <a href="#">The Barbary</a></li>
+                    <li> <a href="#">Barrafina</a></li>
+                    <li> <a href="#">The River Cafe</a></li>
+                    <li> <a href="#">Smoking Goatn</a></li>
+                </ul>
+            </li>
+            <li> | </li>
+            <li>
+                <!-- Use hotel that i look up, shou proof usefull -->
+                <a href="#">Rest </a> 
+                <ul class="submenu">
+                    <li> <a href="#">Melia London Kensington aMelia Collection Hotel</a></li>
+                    <li> <a href="#">Ember Locke</a></li>
+                    <li> <a href="#">Millennium Hotel London Knightsbridge</a></li>
+                    <li> <a href="#">Edward Hotel Paddington</a></li>
+                    <li> <a href="#">Royal National Hotel</a></li>
+                </ul>
+            </li>
+            <li> | </li>
+            <li>
+                <!-- Might not need this for mmy project -->
+                <a href="#">People</a> 
+            </li>
+            <li> | </li>
+            <li>
+                                <!-- Might not need this for mmy project -->
+
+                <a href="#">Feedback    ....</a> 
+                </ul>
+            </li>
+            </ul>
+            <h1>Please tell us about your visit!</h1>
+            <!-- Horizontal line that require for this assignment -->
+            <hr>
+    </nav>
+    <form action="process.php" method="post">
+        <div class="formelement">
+            <!-- Put in range between 1 and 10, but for somereason they can go down to the negative -->
+            <label>Your Favorite Number between 1 and 10:</label> 
+            <input name="favnum" id="favnum" type="number" min= "1'" max="10">
+        </div>
+        <!-- Input the date, make it up here to look the same as the website -->
+        <label>When did you visit?</label>
+        <input type="date" required /></form></br>
+        <fieldset>
+            <legend>General Information</legend>        
+        <div class="formelement">
+        <label>Favorite Place</label> 
+        <br/>
+        <!-- Use the same class and id since the purpose of this is to find out what there favorite place -->
+        <input name="favplace" id="favplace" type="radio"> Baseball Field <br/>
+        <input name="favplace" id="favplace" type="radio"> Museum <br/>
+        <input name="favplace" id="favplace" type="radio"> Luigis Italian Restaurant<br/>
+        <input name="favplace" id="favplace" type="radio"> Mom's Hotel <br/>
+        <input name="favplace" id="favplace" type="radio"> The Youth Hotel<br/>
+        </div>
+        </fieldset>
+        <!-- simple submit button -->
+        <div class="submit">
+            <!-- Make a slider for the rating -->
+            <label>Rate your stay at London</label></br>
+            "0"<input name="likeme" id="likeme" type="range" min="1" max="10" value="9">"10"
+            <br/>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>

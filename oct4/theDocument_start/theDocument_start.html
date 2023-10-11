@@ -29,40 +29,64 @@ button {
 		else{
 			yahooelement.style.display = "none";
 		}
+
+
+
 	}
 	function number04(){
 		//make all with the className of 'new' have a yellow background
-		document.getElementsByClassName("new").style.backgroundColor = "yellow";
+		var newclasses = document.getElementsByClassName("new")
 
-		console.log(document.getElementsByClassName("new").length)
-		newelements = document.getElementsByClassName("new");
+		for(var i =0; i < newclasses.length; i++){
+			console.log(newclasses[i])
+			newclasses[i].style.backgroundColor = "yellow";
 
-		for(var i =0; i < newelements.length ; i++){
-			newelements[i].style.color = "orange";
 		}
-		}
+		
+	
+	
+	}
 	function number05(){
 		//each time it is clicked, make the image (id of 'best') move right by 10 pixels
+		var tiger = document.getElementById("best")
+
+		tiger.style.left = parseInt(tiger.style.left) + 10 + "px"
 
 	}
 	function number06(){
 		//append, at the end of the document, the text " ISTE 240 "
+		tetxNode = document.createTextNode("ISTE240")
+		document.getElementsByTagName("body")[0].appendChild(tetxNode)
+		// document.appendChild(textNode)
 
 	}
    function number07(){
-      //create an <li> node
-      
-      //create an <a> node
-      
-      //create a text node holding "Purdue University"
-      
-      //put the text node inside of the <a> tag
-      
+    	//create an <li> node
+    	linode = document.createElement("li");
+
+		//create an <a> node
+		anchornode = document.createElement("a");
+
+    	//create a text node holding "Purdue University"
+	  	purduetext = document.createElement("Purdue University");
+
+		//put the text node inside of the <a> tag
+		anchornode.appendChild( purduetext)
+		console.log(anchornode)
+
       //give the <a> tag the href attribute and set it to "https://www.purdue.edu/"
-      
+		anchornode.setAttribute("href", "https://www.purdue.edu/" )
+		console.log(anchornode)
+
       //put the <a> tag inside of the <li>
-      
+		linode.appendChild(anchornode)
+		console.log(linode)
+
       //put the <li> in the <ol> so it shows up first!
+
+		document.getElementById("myList")
+		myList.inserBefore(linode,myList.childNode[0])
+
 
 	}
 </script>

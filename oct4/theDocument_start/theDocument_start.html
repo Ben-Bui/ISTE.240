@@ -119,12 +119,12 @@ button {
 
 	<script>
 
-		function changeStyle(){
+		function changeStyle(me){
 			document.getElementById("myElement").style.background = "red";
 		}
 	</script>
 
-	<div id="myElement" onmouseover="changeStyle()">Mouse Over me to change</div>
+	<div id="myElement" onmouseover="changeStyle(this)">Mouse Over me to change</div>
 
 </body>
 </html>

@@ -80,10 +80,10 @@
             <!-- Horizontal line that require for this assignment -->
             <hr>
     </nav>
-    <form action="process.php" method="post">
+    <form method="get">
         <div class="formelement">
             <!-- Put in range between 1 and 10, but for somereason they can go down to the negative -->
-            <label>Your Favorite Number between 1 and 10:</label> 
+            <label>How many in your group?</label> 
             <input name="favnum" id="favnum" type="number" min= "1'" max="10">
         </div>
         <!-- Input the date, make it up here to look the same as the website -->
@@ -106,7 +106,7 @@
         <div class="submit">
             <!-- Make a slider for the rating -->
             <label>Rate your stay at London</label></br>
-            "0"<input name="likeme" id="likeme" type="range" min="1" max="10" value="9">"10"
+            "0"<input name="rating" id="rating" type="range" min="1" max="10" value="5">"10"
             <br/>
             <input type="submit" value="submit">
         </div>

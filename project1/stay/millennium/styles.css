@@ -11,12 +11,6 @@ h1{
 hr{
     width: 80%;
 }
-/* My own logo, make it small and on the left, similar to the assignment */
-#logo{
-    float: left;
-    height: 5%;
-    width: 5%;
-}
 /* Make the nav bar look easier,  keep the light blue, i like it fit with the background */
 .dropdown ul{
     display: flex;
@@ -52,17 +46,6 @@ hr{
 .dropdown li:hover .submenu{
     visibility: visible;
     opacity: 100;
-}
-form .formelement{
-    margin-bottom: 8px;
-    text-align: center;
-}
-form{
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
 }
 fieldset{
     text-align: center;

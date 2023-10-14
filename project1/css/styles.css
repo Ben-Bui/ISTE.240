@@ -64,6 +64,15 @@ h2{
       height: 100%;
     }
   }
+fieldset{
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    place-items: center;
+}
+legend{
+    text-align: center;
+}
 .general{
     text-align: center;
     align-items: center;

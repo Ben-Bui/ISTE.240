@@ -75,16 +75,18 @@ h2{
     margin-right: auto;
     width: 50%;
 }
+/* Change size to fit with mobile */
 @media only screen and (max-width: 480px) {
     .picture {
       width: 100%;
       height: 100%;
     }
   }
+  /* Center text and background color pop */
 .info{
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: tan;
+    background-color: beige;
 }

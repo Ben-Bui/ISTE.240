@@ -70,16 +70,18 @@ h2{
     margin-right: auto;
     width: 50%;
 }
+/* Make it so that it would be bigger when using mobile screen that smaller than 480 */
 @media only screen and (max-width: 480px) {
     .picture {
       width: 100%;
       height: 100%;
     }
   }
+/* Center it and make it beige to pop from the background */
 .info{
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: tan;
+    background-color: beige;
 }

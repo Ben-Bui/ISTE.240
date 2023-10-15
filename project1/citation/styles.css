@@ -50,7 +50,7 @@ hr{
 
 .citation{
     text-align: center;
-    justify-content: center;
-    display: grid;
-    place-items: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;;
 }

@@ -7,14 +7,47 @@
 body {margin-left:100px;}
 </style>
 
-<script>
+<!-- <script>
 // code two functions multiply and divide functions here
 	//hints:
 		//when you get a value out of an input, you are getting a string.  To get a number, use parseInt()
 		//When you want to output something into the HTML you can use .innerHTML - like document.getElementById("result").innerHTML= "fred";
+function multiply() {
+    var firstOperand = parseInt(document.getElementById('firstoperand').value);
+    var secondOperand = parseInt(document.getElementById('secondoperand').value);
 
+    // Check if numbers
+    if (!isNaN(firstOperand) && !isNaN(secondOperand)) {
+        //  multiplication
+        var result = firstOperand * secondOperand;
+        document.getElementById('result').innerHTML = "Result: " + result;
+    } else {
+        document.getElementById('result').innerHTML = "Please enter valid numbers.";
+    }
+}
 
-</script>
+function divide() {
+    var firstOperand = parseInt(document.getElementById('firstoperand').value);
+    var secondOperand = parseInt(document.getElementById('secondoperand').value);
+
+    // Check if numbers
+    if (!isNaN(firstOperand) && !isNaN(secondOperand)) {
+        // Check if not zero
+        if (secondOperand !== 0) {
+            // using divide function
+            var result = firstOperand / secondOperand;
+            document.getElementById('result').innerHTML = "Result: " + result;
+        } else {
+            document.getElementById('result').innerHTML = "Division by zero is not allowed.";
+        }
+    } else {
+        document.getElementById('result').innerHTML = "Please enter valid numbers.";
+    }
+}
+
+</script> -->
+
+<script src="EX05.js"></script>
 
 </head>
 <body>

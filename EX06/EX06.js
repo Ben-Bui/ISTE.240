@@ -1,90 +1,87 @@
-// EX05 A
-function jsStyle() {
-    // function to change style
-    // Change the color and the size of the font
-    // in the paragraph with id='text'
-    var paragraph = document.getElementById('text');
+// EX06 A
+// Function for 'getElementById' so I don't have to do it again
+function $(id){
+	return document.getElementById(id);
+}
+function moveText(id) { 
+	var moveright = parseInt($(id).style.left);
+	moveright = moveright + 10;
+    $(id).style.left = moveright + 'px';
+}
+// EX06 B
 
-    // Check if  exists
-    if (paragraph) {
-        paragraph.style.color = 'red';  // Change the text color to blue
-        paragraph.style.fontSize = '30px';  // Change the font size to 24 pixels
+function howmany() {
+  
+    // Count all input elements in the form
+    var totalInputCount = document.getElementsByTagName('input');
+  
+    // Count input elements of type 'text' in the form
+    var textInputCount = 0;
+    for(var i = 0; i < totalInputCount.length; i++) {
+        if(totalInputCount[i].type == "text") {
+            textInputCount++;   
+        }
     }
+    // Print the counts to the console
+    console.log('Total input elements in the form: ' + totalInputCount.length);
+    console.log('Input elements of type "text" in the form: ' + textInputCount);
+  }
+
+
+// EX06 C
+function colorchanger() {
+    // Get the select element by its id
+    var select = document.getElementById("mySelect").options[mySelect.selectedIndex].value;
+    // Get the selected option
+    document.getElementById("changecolor").style.backgroundColor = select;
+  }
+
+
+// EX06 D
+function changeColor() { 
+	// When the user rolls the mouse over the text it changes 
+	// to the color of the selected option in exercise 6c.
+    var select = document.getElementById("mySelect").options[mySelect.selectedIndex].value;
+    document.getElementById("rb").style.color= select;
 }
-// EX05 B
 
-function getFormValues() {
-    // function to send first and last names
-    // to an 'alert' message.
-    var firstNameInput = document.getElementById('fname');
-    var lastNameInput = document.getElementById('lname');
-
-    // Get the values 
-    var firstName = firstNameInput.value;
-    var lastName = lastNameInput.value;
-
-    // Create a message with the values
-    var message = "First Name: " + firstName + "\nLast Name: " + lastName;
-
-    // Display the message in an alert
-    alert(message);
-}
-// EX05 C
-
-function getOptions() {
-	// function to display the number of options in an alert()
-    var selectElement = document.getElementById('mySelect');
-    
-    // Get the number of options in the select element
-    var numberOfOptions = selectElement.options.length;
-    
-    // Display the number of options in an alert
-    alert('Number of options: ' + numberOfOptions);	
-
-}
-// EX05 D
-
-//create a function that is called on the mouseover that turns the text red
-function turnRed() {
-    var pElement = document.getElementById('rb');
-    pElement.style.color = 'red';
-}
-//create a function that is called on the mouseout that turns the text black
-function turnBlack() {
-    var pElement = document.getElementById('rb');
-    pElement.style.color = 'black';
-}
 // EX05 E
-
 function multiply() {
-    var firstOperand = parseInt(document.getElementById('firstoperand').value);
-    var secondOperand = parseInt(document.getElementById('secondoperand').value);
+    var num1 = parseFloat(document.getElementById('firstoperand').value);
+    var num2 = parseFloat(document.getElementById('secondoperand').value);
 
-    // Check if numbers
-    if (!isNaN(firstOperand) && !isNaN(secondOperand)) {
-        //  multiplication
-        var result = firstOperand * secondOperand;
-        document.getElementById('result').innerHTML = "Result: " + result;
+    if (isNaN(num1), isNaN(num2)) {
+        var result = document.createTextNode("Enter valid numbers.");
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = '';
+        resultElement.appendChild(result);
     } else {
-        document.getElementById('result').innerHTML = "Please enter valid numbers.";
+        var multiplication = num1 * num2;
+        var division = num1 / num2;
+
+        var resultText = document.createTextNode("Multiply: " + multiplication + "\nDivide: " + division);
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = '';
+        resultElement.appendChild(resultText);
     }
 }
 
 function divide() {
-    var firstOperand = parseInt(document.getElementById('firstoperand').value);
-    var secondOperand = parseInt(document.getElementById('secondoperand').value);
+    var num1 = parseFloat(document.getElementById('firstoperand').value);
+    var num2 = parseFloat(document.getElementById('secondoperand').value);
 
-    // Check if numbers
-    if (!isNaN(firstOperand) && !isNaN(secondOperand)) {
-        // Check if not zero
-        if (secondOperand !== 0) {
-            // using divide function
-            var result = firstOperand / secondOperand;
-            document.getElementById('result').innerHTML = "Result: " + result;
-        } else {
-            document.getElementById('result').innerHTML = "Division by zero is not allowed.";
-        }
+    if (isNaN(num1) || isNaN(num2)) {
+        var result = document.createTextNode("Enter valid numbers.");
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = '';
+        resultElement.appendChild(result);
     } else {
-        document.getElementById('result').innerHTML = "Please enter valid numbers.";
+        var multiplication = num1 * num2;
+        var division = num1 / num2;
+
+        var resultText = document.createTextNode("Multiply: " + multiplication + "\nDivide: " + division);
+        var resultElement = document.getElementById('result');
+        resultElement.innerHTML = '';
+        resultElement.appendChild(resultText);
     }
 }

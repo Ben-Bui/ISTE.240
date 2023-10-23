@@ -42,6 +42,20 @@ function getOptions() {
     alert('Number of options: ' + numberOfOptions);	
 
 }
+function colorchanger() {
+    // Get the select element by its id
+    var select = document.getElementById('mySelect');
+    // Get the selected option
+    var selectedOption = select.options[select.selectedIndex];
+    // Get the color value from the selected option
+    var color = selectedOption.value;
+  
+    // Get the div element containing your exercise content
+    var div = document.getElementById('exerciseContainer');
+  
+    // Set the background color of the div
+    div.style.backgroundColor = color;
+  }
 // EX05 D
 
 //create a function that is called on the mouseover that turns the text red

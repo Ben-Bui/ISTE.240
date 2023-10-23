@@ -47,7 +47,6 @@ function changeColor() {
 
 // EX05 E
 function multiply() {
-    // Get the input values
     var num1 = parseFloat(document.getElementById('firstoperand').value);
     var num2 = parseFloat(document.getElementById('secondoperand').value);
 
@@ -60,7 +59,7 @@ function multiply() {
         var multiplication = num1 * num2;
         var division = num1 / num2;
 
-        var resultText = document.createTextNode("Multiplication: " + multiplication + "\nDivision: " + division);
+        var resultText = document.createTextNode("Multiply: " + multiplication + "\nDivide: " + division);
         var resultElement = document.getElementById('result');
         resultElement.innerHTML = '';
         resultElement.appendChild(resultText);
@@ -68,12 +67,11 @@ function multiply() {
 }
 
 function divide() {
-    // Get the input values
     var num1 = parseFloat(document.getElementById('firstoperand').value);
     var num2 = parseFloat(document.getElementById('secondoperand').value);
 
     if (isNaN(num1) || isNaN(num2)) {
-        var result = document.createTextNode("Please enter valid numbers.");
+        var result = document.createTextNode("Enter valid numbers.");
         var resultElement = document.getElementById('result');
         resultElement.innerHTML = '';
         resultElement.appendChild(result);
@@ -81,7 +79,7 @@ function divide() {
         var multiplication = num1 * num2;
         var division = num1 / num2;
 
-        var resultText = document.createTextNode("Multiplication: " + multiplication + "\nDivision: " + division);
+        var resultText = document.createTextNode("Multiply: " + multiplication + "\nDivide: " + division);
         var resultElement = document.getElementById('result');
         resultElement.innerHTML = '';
         resultElement.appendChild(resultText);

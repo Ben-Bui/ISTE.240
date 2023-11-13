@@ -1,31 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const imageSlider = document.querySelector(".image-slider .slider");
-    const videoSlider = document.querySelector(".video-slider .slider");
-    const prevImageButton = document.getElementById("prevImage");
-    const nextImageButton = document.getElementById("nextImage");
-    const prevVideoButton = document.getElementById("prevVideo");
-    const nextVideoButton = document.getElementById("nextVideo");
-    const slides = document.querySelectorAll(".slider img, .slider iframe");
-    let currentIndex = 0;
+// script.js
+let currentIndex = 0;
+const imageSlides = document.querySelectorAll('.slider img');
+const videoFrames = document.querySelectorAll('.video-slider iframe');
+const totalImageSlides = imageSlides.length;
+const totalVideoFrames = videoFrames.length;
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.transform = `translateX(-${index * 100}%)`;
-        });
-    }
+function showImageSlide(index) {
+    imageSlides.forEach((slide, i) => {
+        const scale = i === index ? 1 : 0.8;
+        slide.style.transform = `translateX(-${index * 100}%) scale(${scale})`;
+    });
+}
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
+function showVideoFrame(index) {
+    videoFrames.forEach((frame, i) => {
+        if (i === index) {
+            frame.classList.add('active');
+        } else {
+            frame.classList.remove('active');
+        }
+    });
+}
 
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    }
+function changeSlide(direction) {
+    currentIndex = (currentIndex + direction + totalImageSlides) % totalImageSlides;
+    showImageSlide(currentIndex);
+    showVideoFrame(currentIndex);
+}
 
-    nextImageButton.addEventListener("click", nextSlide);
-    prevImageButton.addEventListener("click", prevSlide);
-    nextVideoButton.addEventListener("click", nextSlide);
-    prevVideoButton.addEventListener("click", prevSlide);
+document.addEventListener('DOMContentLoaded', function () {
+    showImageSlide(currentIndex);
+    showVideoFrame(currentIndex);
 });

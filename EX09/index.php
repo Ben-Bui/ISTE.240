@@ -7,7 +7,7 @@
 
 
 	//figure out state of program...should i be nserting something ???
-    if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($_GET['from']) && !empty($_GET['message'])) {
+    if (!empty($_GET['from']) && !empty($_GET['message'])) {
 		$name = $_GET['from'];
         $message = $_GET['message'];
 

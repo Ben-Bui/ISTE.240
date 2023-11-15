@@ -11,8 +11,13 @@
 
         if(!empty($_GET['name'])){
             
-            die("State: store name");
             $name = $_GET['name'];
+            session_name("btb4516-name");
+            session_start();
+            $_SESSION['name'] = $name;
+
+            //redirect
+            header("Location: page1.php");
 
         }
     ?>    

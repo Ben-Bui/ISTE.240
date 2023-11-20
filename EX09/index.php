@@ -7,13 +7,16 @@
 
 
 	//figure out state of program...should i be nserting something ???
-    if ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($_GET['name']) && !empty($_GET['message'])) {
-        $name = $_GET['name'];
+    if (!empty($_GET['from']) && !empty($_GET['message'])) {
+		$name = $_GET['from'];
         $message = $_GET['message'];
 
-        $sql = "INSERT INTO comments (name, message) VALUES (?, ?)";
+        //$sql = "INSERT INTO `comments` ('from', 'message', `date`)) VALUES (?, ?, now());";
+		$sql = "INSERT INTO `comments` (`from`, `message`, `date`) VALUES (?, ?, NOW())";
+
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ss", $name, $message);
+
         $stmt->execute();
     }
 
@@ -33,7 +36,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>240 DB Insert</title>
+		<title>EX09</title>
+		<style>
+			.greent-text{
+				color: green;
+			}
+		</style>
 	</head>
 	<body>
 		<h3>What do you think?</h3>
@@ -42,15 +50,15 @@
 			<?php
 				//will use for output
 				foreach ($comments as $comments) {
-				  echo "<li>" . $comments['name'] . ' '. $comments['message'] . "</li>" ;
+				  echo "<li><span class='greent-text'>" . $comments['from'] . '</span>: '. $comments['message'] . ' @'. $comments['date'] . "</li>" ;
 				}
 			?>
 			</ul>
 		</div>
 		<hr/>
 		<h3>What do you have to say?</h3>
-		<form action="preparedStatement.php" method="get">		
-			Name: <input type="text" name="name" required><br>
+		<form action="index.php" method="get">		
+			Name: <input type="text" name="from" required><br>
 			<textarea name="message" required></textarea><br>
 			<input type="submit" value="Add to the List"/>
 		</form>

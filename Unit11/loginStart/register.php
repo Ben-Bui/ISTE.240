@@ -20,7 +20,7 @@
 			$sql = "INSERT INTO `240Login` (`uname`, `pass`) VALUES (?, ?);";
 
 			$stmt = $conn->prepare( $sql);
-			$stmt->bind_param("ss",$uname,$hashedpass	);
+			$stmt->bind_param("ss",$uname,$hashedpass);
 			$stmt->execute();
 			$stmt->close();
 

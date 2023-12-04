@@ -1,11 +1,16 @@
 <?php
+	session_name("btb4516_login2");
+	session_start();
 
+	if(!empty( $_SESSION['login'])){
+		die("Not signed in, sooo you can't see the page");
+	}
 	
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Login</title>
  	<style type="text/css">
  		form div

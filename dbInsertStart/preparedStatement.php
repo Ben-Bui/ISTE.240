@@ -10,12 +10,6 @@
 	if( !empty( $_GET['fName'] ) && !empty( $_GET['lName'] ) ){
 		$fName = $_GET['fName'];
 		$lName = $_GET['lName'];
-		//die("DATA PROVIDED INSERT...");
-		//$sql= "INSERT INTO `240Insert` (`first`, `last`) VALUES ('JP', 'Taylor');";
-		
-		// $sql= "INSERT INTO `240Insert` (`first`, `last`) VALUES ('$fName', '$lName');";
-		//echo "<br/> . $sql . "<br/>;
-		// $conn->query($sql);
 		
 		$sql = "INSERT INTO `240Insert` (`first`, `last`) VALUES (?, ?);";
 		$stmt = $conn->prepare($sql);

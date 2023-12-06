@@ -1,6 +1,6 @@
 <?php
 /**
- * Connect to the database.
+ * Connect to the database. Test
  */
 
 	include("../../dbConn.php");

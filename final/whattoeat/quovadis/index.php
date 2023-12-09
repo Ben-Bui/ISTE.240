@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- This place have big history, and location is nice so user should like this -->
     <div class="info">
-        <h1>A bit of History</h1>
+        <h2>A bit of History</h1>
         <p> Quo Vadis was originally established in the early 20th century, in 1926, by an Italian named Peppino Leoni. 
             It was a Italian restaurant and became known for its authentic Italian cuisine and welcoming atmosphere.<br>
 

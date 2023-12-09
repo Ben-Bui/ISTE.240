@@ -7,10 +7,6 @@
     <!-- Title will be dynamically set for each page -->
     <title><?php echo $pageTitle; ?></title>
     <style>
-        /* Highlight active item in the navigation */
-        .active {
-            background-color: lightgreen; /* Change to the color you prefer */
-        }
     /* Breadcrumb  */
         .breadcrumb {
             margin: 10px 0;
@@ -73,5 +69,3 @@
         <!-- Add dynamic breadcrumb for the subpage -->
         <?php echo $pageTitle; ?>
     </div>
-
-    <!-- ... Rest of your content ... -->

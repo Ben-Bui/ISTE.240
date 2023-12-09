@@ -8,7 +8,7 @@ include ("../../header.php");?>
     </figure>
 <!-- It a musuem so look for what would interest people -->
     <div class="info">
-        <h1>Why Visit The British Museum?</h1>
+        <h2>Why Visit The British Museum?</h1>
             <p>The British Museum, located in the middle of London, is one of the world's most 
                 renowned and comprehensive museums. Founded in 1753, it houses a staggering 
                 collection of over eight million works of art, artifacts, and historical 

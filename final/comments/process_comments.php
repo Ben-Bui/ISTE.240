@@ -1,82 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Comments Page</title>
-    <style>
-        /* CSS for DHTML component */
-        #dynamicElement {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            transition: background-color 0.5s ease-in-out;
+<?php
+// Include the database connection file
+include("../../../dbConn.php");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Define variables and initialize with empty values
+    $name = $email = $comment = "";
+
+    // Processing form data when form is submitted
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $comment = $_POST["comment"];
+
+    // Prepare an SQL statement to insert data into the database
+    $sql = "INSERT INTO `comments` (`from`, `email`, `message`, `date`) VALUES (?, ?, ?, NOW())";
+
+    if ($stmt = $conn->prepare($sql)) {
+        // Bind variables to the prepared statement as parameters
+        $stmt->bind_param("sss", $name, $email, $comment);
+
+        // Attempt to execute the prepared statement
+        if ($stmt->execute()) {
+            // Redirect back to the comments page after successful submission
+            header("location: comments.php");
+            exit();
+        } else {
+            echo "Oops! Something went wrong. Please try again later.";
         }
-        /* CSS for Image Gallery */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            width: 150px;
-            margin: 5px;
-            cursor: pointer;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .gallery img:hover {
-            opacity: 0.7;
-        }
-    </style>
-    <script>
-        // JavaScript for Image Gallery
-        function displayImage(imageId) {
-            var images = document.getElementsByClassName("gallery-img");
-            for (var i = 0; i < images.length; i++) {
-                images[i].style.display = "none";
-            }
-            document.getElementById(imageId).style.display = "block";
-        }
-    </script>
-</head>
-<body>
-    <h1>Leave a Comment</h1>
-    <!-- Comment Form -->
-    <form action="process_comment.php" method="post" onsubmit="return validateForm()">
-    <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    }
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+    // Close statement
+    $stmt->close();
+}
 
-        <label for="comment">Comment:</label><br>
-        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-
-        <!-- Add more fields if needed -->
-        
-        <input type="submit" value="Submit" onclick="changeColor()">
-    </form>
-
-    <hr>
-
-    <h2>Previous Comments</h2>
-    <!-- Display Previous Comments -->
-    <!-- PHP code for comments display... -->
-    
-    <!-- Image Gallery -->
-    <div class="gallery">
-        <img class="gallery-img" src="image1.jpg" alt="Image 1" onclick="displayImage('image1')">
-        <img class="gallery-img" src="image2.jpg" alt="Image 2" onclick="displayImage('image2')">
-        <img class="gallery-img" src="image3.jpg" alt="Image 3" onclick="displayImage('image3')">
-    </div>
-
-    <!-- Images for Gallery -->
-    <div id="image1" class="gallery-img" style="display: none;">
-        <img src="image1.jpg" alt="Image 1">
-    </div>
-    <div id="image2" class="gallery-img" style="display: none;">
-        <img src="image2.jpg" alt="Image 2">
-    </div>
-    <div id="image3" class="gallery-img" style="display: none;">
-        <img src="image3.jpg" alt="Image 3">
-    </div>
-</body>
-</html>
+// Close connection
+$conn->close();
+?>

@@ -27,8 +27,7 @@ body {
 }
 
 /* Adjust text alignment */
-h1,
-p {
+h1,p{
     text-align: left; /* Left align for better readability */
 }
 /* Styling for dropdown navigation */

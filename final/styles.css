@@ -4,7 +4,9 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6; 
 }
-
+title{
+    text-align: center;
+}
 /* Centering for images */
 .picture {
     display: block;

@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- History of the place, use website and what you learn from uncle Long -->
     <div class="info">
-        <h1>History of The Tower Of London</h1>
+        <h2>History of The Tower Of London</h1>
         <p> The tower was created after the Norman Conquest 
             of England in 1066 by William the Conqueror. Its construction began as part 
             of the effort to secure and control the city of London.
@@ -30,7 +30,7 @@ include ("../../header.php");
              that has endured for nearly a millennium.
         </p>
         <!-- Tell them reason to visit, use information from uncle Long should be good -->
-        <h1>Why Visit The Tower Of London?</h1>
+        <h2>Why Visit The Tower Of London?</h1>
             <p>The Tower of London has a history spanning over a thousand years. It has 
                 served as a royal palace, a prison, and a treasury. Exploring the Tower 
                 let you to go back in time and discover its  past, including 

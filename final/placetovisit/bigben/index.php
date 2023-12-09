@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>The Houses of Parliament and Big Ben</title>
-
-</head>
-<body>
-
-    <h1>The Houses of Parliament and Big Ben</h1>
-    <!-- Horizontal line create space so the page don't look to tuck in -->
-    <hr>
-    <?php include ("../../header.php"); ?>
+<?php
+$pageTitle = "House of Parliment and Big Ben";
+$welcometitle = "Welcome to House of Parliment and Big Ben";
+include ("../../header.php");
+?>
 
     <figure>
         <img class="picture" src="houseparlimentbigben.jpg" id="palace" alt="palace">

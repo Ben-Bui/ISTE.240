@@ -1,10 +1,9 @@
     <!-- Footer content -->
     <fieldset>
         <!-- Add Citation and grading,  -->
-        <legend>Citation And Grading</legend>        
+        <legend>Citation </legend>        
         <ul class="formelement">
-            <li><a href="citation/citation.html">Citation</a></li>
-            <li><a href="citation/grading.html">Grading</a></li>
+            <li><a href="citation">Citation</a></li>
         </ul>
     </fieldset>
 </body>

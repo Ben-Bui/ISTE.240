@@ -1,7 +1,8 @@
 <?php
 $pageTitle = "Homepage";
-include 'header.php';
-$welcometitle = "Welcome to London"?>
+$welcometitle = "Welcome to London";
+include ("header.php");?>
+
     
 
     <figure>
@@ -52,15 +53,7 @@ $welcometitle = "Welcome to London"?>
                 center for the arts, and a place of innovation, 
                 preserving its rich history while embracing the modern era.</p>
             </div>
-        <fieldset>
-            <!-- Add Citation and grading,  -->
-            <legend>Citation And Grading</legend>        
-            <ul class="formelement">
-                <li><a href="citation/index.html">Citation</a></li>
-                <li><a href="citation/grading.html">Grading</a></li>
-            </ul>
-        </fieldset>
-        <?php include 'footer.php'; ?>
+        <?php include ("footer.php"); ?>
 
 </body>
 </html>

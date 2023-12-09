@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Citation</title>
-
-</head>
-<body>
-
-    <h1>References</h1>
-    <!-- Horizontal line create space so the page don't look to tuck in -->
-    <hr>
-    <?php include 'header.php'; ?>
+<?php
+$pageTitle = "Citation";
+$welcometitle = "Citation";
+include ("../header.php");?>
 
 
     <footer class="citation">

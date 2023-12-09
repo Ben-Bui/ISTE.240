@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1>The British Museum</h1>
-    <!-- Horizontal line create space so the page don't look to tuck in -->
-    <hr>
-    <?php include ("../../header.php"); ?>
+<?php
+$pageTitle = "The British Museum";
+$welcometitle = "Welcome to The  British Museum";
+include ("../../header.php");?>
 
     <figure>
         <img class="picture" src="british_museum.jpg" id="museum" alt="museum">

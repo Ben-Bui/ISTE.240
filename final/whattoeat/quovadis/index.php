@@ -1,60 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Quo Vadis</title>
-
-</head>
-<body>
-
-    <h1>Quo Vadis</h1>
-    <!-- Horizontal line create space so the page don't look to tuck in -->
-    <hr>
-    <nav class="dropdown">
-        <ul>
-            <li>
-                <!-- Use what I learn in class -->
-                <a href="#">Home </a> 
-                <ul class="submenu">
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/index.html">General Information</a></li>
-                </ul>
-            </li>
-            <!-- I will use this as the seperator -->
-            <li> | </li>
-
-            <li>
-                <a href="#">What to Do?</a> 
-                <ul class="submenu">
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/placetovisit/britishmuseum/index.html">The British Museum</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/placetovisit/tower/index.html">The Tower of London</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/placetovisit/palace/index.html">Buckingham Palace</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/placetovisit/bigben/index.html">The Houses of Parliament and Big Ben</a></li>
-                </ul>
-            </li>
-            <li> | </li>
-            <!-- Use my food place that I have search up, should proof usefull in the future -->
-            <li>
-                <a href="#">What to Eat?</a> 
-                <ul class="submenu">
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/whattoeat/st.john/index.html">British: St. John</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/whattoeat/cecilia/index.html">Café Cecilia</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/whattoeat/quovadis/index.html">Quo Vadis</a></li>
-                </ul>
-            </li>
-            <li> | </li>
-            <li>
-                <!-- Use hotel that i look up from just google-->
-                <a href="#">Where to Stay </a> 
-                <ul class="submenu">
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/stay/melia/index.html">Melia London Kensington a Melia Collection Hotel</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/stay/emberlocke/index.html">Ember Locke</a></li>
-                    <li> <a href="https://people.rit.edu/~btb4516/ISTE240/project1/stay/millennium/index.html">Millennium Hotel London Knightsbridge</a></li>
-                </ul> 
-            </li>
-        </ul>       
-    </nav>
+<?php
+$pageTitle = "Quo Vadis";
+$welcometitle = "Quo Vadis";
+include ("../../header.php");
+?>
     <figure>
         <img class="picture" src="location.jpg" id="pic" alt="pic">
     </figure>

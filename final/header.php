@@ -25,10 +25,10 @@
             <li>
                 <a href="#">What to Do?</a> 
                 <ul class="submenu">
-                    <li><a href="placetovisit/britishmuseum/index.php">The British Museum</a></li>
-                    <li><a href="placetovisit/tower/index.php">The Tower of London</a></li>
-                    <li><a href="placetovisit/palace/index.php">Buckingham Palace</a></li>
-                    <li><a href="placetovisit/bigben/index.php">The Houses of Parliament and Big Ben</a></li>
+                    <li><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/placetovisit/britishmuseum/index.php">The British Museum</a></li>
+                    <li><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/placetovisit/tower/index.php">The Tower of London</a></li>
+                    <li><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/placetovisit/palace/index.php">Buckingham Palace</a></li>
+                    <li><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/placetovisit/bigben/index.php">The Houses of Parliament and Big Ben</a></li>
                 </ul>
             </li>
             <li> | </li>
@@ -36,9 +36,9 @@
             <li>
                 <a href="#">What to Eat?</a> 
                 <ul class="submenu">
-                    <li> <a href="whattoeat/st.john/index.php">British: St. John</a></li>
-                    <li> <a href="whattoeat/cecilia/index.php">Café Cecilia</a></li>
-                    <li> <a href="whattoeat/quovadis/index.php">Quo Vadis</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/whattoeat/st.john/index.php">British: St. John</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/whattoeat/cecilia/index.php">Café Cecilia</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/whattoeat/quovadis/index.php">Quo Vadis</a></li>
                 </ul>
             </li>
             <li> | </li>
@@ -46,9 +46,9 @@
                 <!-- Use hotel that i look up from just google-->
                 <a href="#">Where to Stay </a> 
                 <ul class="submenu">
-                    <li> <a href="stay/melia/index.php">Melia London Kensington a Melia Collection Hotel</a></li>
-                    <li> <a href="stay/emberlocke/index.php">Ember Locke</a></li>
-                    <li> <a href="stay/millennium/index.php">Millennium Hotel London Knightsbridge</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/melia/index.php">Melia London Kensington a Melia Collection Hotel</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/emberlocke/index.php">Ember Locke</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/millennium/index.php">Millennium Hotel London Knightsbridge</a></li>
                 </ul> 
             </li>
         </ul>       

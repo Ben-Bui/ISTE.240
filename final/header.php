@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Title will be dynamically set for each page -->
     <title><?php echo $pageTitle; ?></title>
+    <style>
+        /* Highlight active item in the navigation */
+        .active {
+            background-color: lightgreen; /* Change to the color you prefer */
+        }
+    /* Breadcrumb  */
+        .breadcrumb {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1><?php echo $welcometitle; ?></h1>
+    <h1><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php"><?php echo $welcometitle; ?></a></h1>
     <hr>
     <nav class="dropdown">
         <ul>
@@ -53,3 +66,12 @@
             </li>
         </ul>       
     </nav>
+    
+    <!-- Breadcrumb for indicating page hierarchy -->
+    <div class="breadcrumb">
+        <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php">Home</a> &raquo; 
+        <!-- Add dynamic breadcrumb for the subpage -->
+        <?php echo $pageTitle; ?>
+    </div>
+
+    <!-- ... Rest of your content ... -->

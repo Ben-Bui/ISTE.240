@@ -1,0 +1,56 @@
+/* Different color than the example but he told us that we could do it, use my fav font too */
+body{
+    background-color: lightslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Make the text into the center */
+h1{
+    text-align: center;
+}
+/* Don't want the line to touch the bar on the screen */
+hr{
+    width: 80%;
+}
+/* Make the nav bar look easier,  keep the light blue, i like it fit with the background */
+.dropdown ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    margin: 0px;
+    padding:0px;
+    text-align: center;
+    background:lightblue;
+}
+.dropdown li{
+    padding: 10px;
+    position: relative;
+}
+/* Make the dropdown color the same, look easier on the eye */
+.dropdown .submenu{
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+
+    background:lightblue;
+
+    opacity:0 ;
+    visibility: hidden;
+    
+}
+/* change from red to light pink, lighter color, but still able to see which one you are hover on */
+.dropdown li:hover{
+    background: lightpink;
+}
+
+.dropdown li:hover .submenu{
+    visibility: visible;
+    opacity: 100;
+}
+
+.citation{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;;
+}

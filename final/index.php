@@ -1,10 +1,7 @@
-<?php include("header.php"); ?>
-
-<body>
-
-    <h1>Welcome to London</h1>
-    <!-- Horizontal line create space so the page don't look to tuck in -->
-    <hr>
+<?php
+$pageTitle = "Homepage";
+include 'header.php';
+$welcometitle = "Welcome to London"?>
     
 
     <figure>
@@ -63,5 +60,7 @@
                 <li><a href="citation/grading.html">Grading</a></li>
             </ul>
         </fieldset>
+        <?php include 'footer.php'; ?>
+
 </body>
 </html>

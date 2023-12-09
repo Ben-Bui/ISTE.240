@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- Seem tricky, little to know information, but the place seem to be budget friendly -->
     <div class="info">
-            <h1>Why stay at Ember Locke</h1>
+            <h2>Why stay at Ember Locke</h1>
             <p> The reason why Ember Locke is on this list is due to it budget friendly price, with Victorian style hotel. It had Fitness Center with Gym, Workout Room
                 Bar and lounge. Even though with it budget friendly price, the hotlel have great accommodation for guest. 
                 Located in London, a 15-minute walk from Natural History Museum London and about 3 miles from the center  <br>

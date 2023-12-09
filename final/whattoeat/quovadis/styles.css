@@ -1,87 +1,68 @@
-/* Different color than the example but he told us that we could do it, use my fav font too */
-body{
+/* Typography adjustments */
+body {
     background-color: lightslategray;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
 }
-/* Make the text into the center */
 h1{
     text-align: center;
 }
-/* Don't want the line to touch the bar on the screen */
-hr{
-    width: 80%;
-}
-/* Make the nav bar look easier,  keep the light blue, i like it fit with the background */
-.dropdown ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
-    margin: 0px;
-    padding:0px;
-    text-align: center;
-    background:lightblue;
-}
-.dropdown li{
-    padding: 10px;
-    position: relative;
-}
-/* Make the dropdown color the same, look easier on the eye */
-.dropdown .submenu{
-    flex-direction: column;
-    position: absolute;
-    top: 38px;
-
-    background:lightblue;
-
-    opacity:0 ;
-    visibility: hidden;
-    
-}
-/* change from red to light pink, lighter color, but still able to see which one you are hover on */
-.dropdown li:hover{
-    background: lightpink;
-}
-
-.dropdown li:hover .submenu{
-    visibility: visible;
-    opacity: 100;
-}
-fieldset{
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    place-items: center;
-}
-legend{
-    text-align: center;
-}
-.submit{
-    text-align: center;
-}
-h2{
-    text-align: center;
-    font-style: normal;
-    font-size: 20px;
-}
-.picture{
+/* Centering for images */
+.picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-/* Make it change size when using mobile */
+
+/* Change image size on mobile */
 @media only screen and (max-width: 480px) {
     .picture {
-      width: 100%;
-      height: 100%;
+        width: 100%;
+        height: 100%;
     }
-  }
-  /* Center text and use beige backgroud */
-.info{
+}
+
+/* Padding for content boxes */
+.info {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Adjust text alignment */
+h2, p {
+    text-align: left; /* Left align for better readability */
+}
+/* Styling for dropdown navigation */
+.dropdown ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    align-items: center;
+    background: lightblue;
+}
+
+.dropdown li {
+    padding: 10px;
+    position: relative;
+}
+
+/* Enhance dropdown links visibility */
+.dropdown .submenu {
     flex-direction: column;
-    justify-content: center;
-    background-color: beige;
+    position: absolute;
+    top: 38px;
+    background: lightblue;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown li:hover {
+    background: lightpink;
+}
+
+.dropdown li:hover .submenu {
+    visibility: visible;
+    opacity: 100;
 }

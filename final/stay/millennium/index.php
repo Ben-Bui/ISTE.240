@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- This place seem to be middle budget for visitor with average money-->
     <div class="info">
-            <h1>Why stay at Millennium Hotel London Knightsbridge</h1>
+            <h2>Why stay at Millennium Hotel London Knightsbridge</h1>
             <p> The hotel is located in the upscale district of Knightsbridge, known best for its luxury shopping,
                 including the Harrods department store. It's also close to Hyde Park, making it 
                 an ideal place for both shopping and leisure.

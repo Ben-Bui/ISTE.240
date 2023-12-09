@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- This one kinda tricky, not many history, but rating good, great food it seem, should be perfect for a breakfast place -->
     <div class="info">
-        <h1>Why Dine at Café Cecilia</h1>
+        <h2>Why Dine at Café Cecilia</h1>
             <p> Café Cecilia was debut with their higly anticipated chef name Max Rocha, 
                 famously known for his recipe seasonal cooking style honed at restaurants like St.John.
                 The restaurant style feel homely with simple wooden tables, open kitchen

@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- This place have big history, and location is nice so user should like this -->
     <div class="info">
-        <h2>A bit of History</h1>
+        <h2>A bit of History</h2>
         <p> Quo Vadis was originally established in the early 20th century, in 1926, by an Italian named Peppino Leoni. 
             It was a Italian restaurant and became known for its authentic Italian cuisine and welcoming atmosphere.<br>
 
@@ -28,7 +28,7 @@ include ("../../header.php");
             Quo Vadis includes a members' club, making it a hub for social and cultural activities in Soho. The club features exclusive events, 
             gatherings, and a private space for members.</p>
        
-            <h1>Why Dine at Café Cecilia</h1>
+            <h2>Why Dine at Café Cecilia</h2>
             <p> Quo Vadis has a rich history dating back to the 1920s, making it an iconic institution in London's dining scene. 
                 Its historic charm and storied past add to the dining experience.<br>
 

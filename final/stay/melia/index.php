@@ -8,7 +8,7 @@ include ("../../header.php");
 </figure>
 
 <div class="info">
-    <h1>Melia London Kensington: A Luxurious Stay</h1>
+    <h1>Melia London Kensington: A Luxurious Stay</h2>
     <h2>Location and Accessibility</h2>
     <p>The hotel is situated in London's Kensington area, renowned for its cultural landmarks like the Victoria and Albert Museum and the Natural History Museum. Its convenient access to public transportation simplifies city exploration.</p>
 

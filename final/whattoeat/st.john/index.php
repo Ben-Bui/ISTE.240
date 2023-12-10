@@ -10,7 +10,7 @@ include ("../../header.php");
 
     <div class="info">
         <!-- Give user reason to eat at this place, this place seem famous as it have 3 more restaurant -->
-        <h2>Why Eat at St.John?</h1>
+        <h2>Why Eat at St.John?</h2>
             <p> St. John Restaurant, located in London, is a establishment that 
                 has made a name for itself in the culinary world. Founded by Fergus Henderson and Trevor Gulliver, 
                 it has good a reputation for its distinctive approach to British cuisine.

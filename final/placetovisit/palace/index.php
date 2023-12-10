@@ -8,7 +8,7 @@ include ("../../header.php");
     </figure>
 <!-- History of the place, look for date if don't rememebr them, the rest should be easy -->
     <div class="info">
-        <h2>History of The Buckingham Palace</h1>
+        <h2>History of The Buckingham Palace</h2>
         <p> Buckingham Palace, one of the most iconic landmarks in London, has a history 
             dating back to the early 18th century. It was originally suppose to be a townhouse known as 
             Buckingham House, built for the Duke of Buckingham in 1703. In 1761, King George III 
@@ -16,7 +16,7 @@ include ("../../header.php");
             It was later expanded and transformed into the grand palace we know today.
         </p>
 <!-- Use what you learn about the place when you was there, look for specific from their website -->
-        <h2>Why Visit The Buckingham Palace?</h1>
+        <h2>Why Visit The Buckingham Palace?</h2>
             <p> This place have the most historical significance, the Buckingham Palace is not only a 
                 stunning architectural but also a living part of British history. It's where the 
                 British monarch carries out official duties and hosts state events, making it an essential 

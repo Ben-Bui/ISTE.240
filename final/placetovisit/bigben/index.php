@@ -9,7 +9,7 @@ include ("../../header.php");
     </figure>
 <!-- Not farmilar with the Westminster, but have good information on Big Ben, been there should be good -->
     <div class="info">
-        <h2>History of The House of Parliament and Big Ben</h1>
+        <h2>History of The House of Parliament and Big Ben</h2>
         <p> The construction of the Palace of Westminster, home to the British Parliament, began 
             in the mid-19th century after a fire destroyed the previous building. The design by architect 
             Sir Charles Barry with the iconic clock tower, housing the "Great Bell" (most known as Big Ben), 
@@ -29,7 +29,7 @@ include ("../../header.php");
             Heritage Site, recognizing its architectural and historical significance.
         </p>
 <!-- Beside the big clock, should give them reason to visit the palace instead -->
-        <h2>Why Visit The House of Parliament and Big Ben?</h1>
+        <h2>Why Visit The House of Parliament and Big Ben?</h2>
             <p> The Palace of Westminster is the center of British democracy and politics. It has served as 
                 the meeting place for the UK Parliament for centuries, and its  history is intertwined with 
                 the nation's democratic journey.<br>

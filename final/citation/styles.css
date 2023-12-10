@@ -1,56 +1,65 @@
-/* Different color than the example but he told us that we could do it, use my fav font too */
-body{
+/* Apply a different font for the entire page */
+body {
+    font-family: Arial, sans-serif;
     background-color: lightslategray;
-    font-family: 'Times New Roman', Times, serif;
 }
-/* Make the text into the center */
-h1{
+
+/* Center align h1 */
+h1 {
     text-align: center;
 }
-/* Don't want the line to touch the bar on the screen */
-hr{
+
+/* Give space above and below the hr */
+hr {
     width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-/* Make the nav bar look easier,  keep the light blue, i like it fit with the background */
-.dropdown ul{
+
+/* Style the dropdown menu */
+.dropdown ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-
-    margin: 0px;
-    padding:0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background:lightblue;
+    background: lightblue;
 }
-.dropdown li{
+
+.dropdown li {
     padding: 10px;
     position: relative;
 }
-/* Make the dropdown color the same, look easier on the eye */
-.dropdown .submenu{
+
+.dropdown .submenu {
     flex-direction: column;
     position: absolute;
     top: 38px;
-
-    background:lightblue;
-
-    opacity:0 ;
+    background: lightblue;
+    opacity: 0;
     visibility: hidden;
-    
 }
-/* change from red to light pink, lighter color, but still able to see which one you are hover on */
-.dropdown li:hover{
+
+.dropdown li:hover {
     background: lightpink;
 }
 
-.dropdown li:hover .submenu{
+.dropdown li:hover .submenu {
     visibility: visible;
     opacity: 100;
 }
 
-.citation{
-    text-align: center;
+/* Style the citation section */
+.citation {
+    text-align: left; /* Avoid center align for large blocks of text */
     align-items: center;
     flex-direction: column;
-    justify-content: center;;
+    justify-content: center;
+}
+
+/* Add padding to boxes with content */
+.citation h2,
+.citation p {
+    padding: 10px;
 }

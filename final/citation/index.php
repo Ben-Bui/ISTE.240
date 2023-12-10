@@ -5,7 +5,7 @@ include ("../header.php");?>
 
 
     <footer class="citation">
-        <h1> Citation of My Work</h1>
+        <h1>Citation of My Work</h1>
         <h2>Homepage</h2>
         <ul>
             <!-- This is for my homepage -->
@@ -22,7 +22,7 @@ include ("../header.php");?>
                 specific date and such for my history section on my homepage, and how London transform from what happen from WW2 to now.
                 This site is updated daily because it have weather forcast on it, with the transportation information on it.</p>
      
-         <!-- This is for my british museum page  -->
+    <!-- British Museum Section -->
     
         <h2> British Museum</h2>
         <ul>
@@ -42,7 +42,7 @@ include ("../header.php");?>
         </ul> 
             <p>The only thing I took from this website is the picture of the museum. </p>
             
-            <!-- This is for my tower of London website -->
+    <!-- Tower of London Section -->
           
         <h2> Tower of London</h2>
         <ul>
@@ -61,7 +61,9 @@ include ("../header.php");?>
             <p>This is the orginal website of the Tower of London, I use this for information on some date, information about the Tower,
                 I also use this website for prices, phone number, adress, email, event, tour information so that I can put it on the website.
             </p>
-        <!-- This is for mu Buckingham one -->
+
+    <!-- Buckingham Palace Section -->
+
         <h2>Buckingham Palace</h2>
         <ul>
             <li><a href="https://www.rct.uk/visit/buckingham-palace">https://www.rct.uk/visit/buckingham-palace</a></li>
@@ -75,9 +77,10 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/@51.5011775,-0.1412137,14.58z?entry=ttu">Buckingham Palace Map</a></li>
         </ul>
             <p>This is for a snapshot of the map location of Buckingham Palace.</p>
-        <!-- This below is for Big Ben and House of Parliament -->
-        <h2>House of Parliament and Big Ben</h2>
+      
+    <!-- House of Parliament and Big Ben Section -->
 
+        <h2>House of Parliament and Big Ben</h2>
         <ul>
             <li><a href="https://www.walklondon.com/london-attractions/big-ben-houses-of-parliament.htm">https://www.walklondon.com/london-attractions/big-ben-houses-of-parliament.htm</a></li>
         </ul>
@@ -93,7 +96,8 @@ include ("../header.php");?>
         </ul>
         <p>Just a google map snapshot for location of the place.</p>       
         
-        <!-- St.John Restaurant -->
+    <!-- St.John Restaurant Section -->
+
         <h2>St.John Restaurant</h2>
         <ul>
             <li><a href="https://stjohnrestaurant.com/">https://stjohnrestaurant.com/</a></li>
@@ -115,7 +119,9 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/place/St.+JOHN+Marylebone/@51.5175972,-0.1531587,17z/data=!3m1!4b1!4m6!3m5!1s0x48761ad2581a451d:0x896180205e1c755a!8m2!3d51.5175939!4d-0.1505784!16s%2Fg%2F11s97pf5fn?entry=ttu">Marylebone Map</a></li>
         </ul>
         <p> The three location snapshot using google map of St.John restaurant</p>  
-        <!-- Café Cecilia-->
+       
+    <!-- Café Cecilia Section -->
+       
         <h2>Café Cecilia</h2>
         <ul>
             <li><a href="https://www.timeout.com/london/restaurants/cafe-cecilia">Picture of the Place</a></li>
@@ -133,7 +139,9 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/place/Cafe+Cecilia/@51.5345593,-0.0627033,17z/data=!3m1!4b1!4m6!3m5!1s0x48761de996317e09:0x8664a6364419dbf2!8m2!3d51.534556!4d-0.060123!16s%2Fg%2F11rgbtwbj8?entry=ttu">Map Location</a></li>
         </ul>
         <p>I take a snapshot of map location</p> 
-        <!-- Quo Vadis -->
+    
+    <!-- Quo Vadis Section -->
+    
         <h2>Quo Vadis</h2>
         <ul>
             <li><a href="https://www.quovadissoho.co.uk/">official Website</a></li>
@@ -149,7 +157,9 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/place/Quo+Vadis/@51.5141128,-0.1326476,17z/data=!3m1!4b1!4m6!3m5!1s0x487604d324f5d241:0x726071f493b3b5c5!8m2!3d51.5141128!4d-0.1326476!16s%2Fm%2F0g9_2w1?entry=ttu ">Map Location</a></li>
         </ul>
         <p>I take a snapshot of map location</p> 
-        <!-- Melia London Kensington a Melia Collection Hotel -->
+
+    <!-- Melia London Kensington a Melia Collection Hotel Section -->
+        
         <h2>Melia London Kensington a Melia Collection Hotel</h2>
         <ul>
             <li><a href="https://www.melia.com/en/hotels/united-kingdom">official Website</a></li>
@@ -165,7 +175,9 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/place/Meli%C3%A1+London+Kensington+member+of+Meli%C3%A1+Collection/@51.4957033,-0.1853803,17z/data=!3m1!4b1!4m9!3m8!1s0x4876055e6fd64965:0x660dd725442c0ae!5m2!4m1!1i2!8m2!3d51.4957!4d-0.1828!16s%2Fm%2F011qk6_m?entry=ttu">Map Location</a></li>
         </ul>
         <p>I take a snapshot of map location</p> 
-        <!-- Ember Locke -->
+
+    <!-- Ember Locke Section -->
+        
         <h2>Ember Locke</h2>
         <ul>
             <li><a href="https://www.lockeliving.com/en/london/ember-locke?gad=1&gclid=Cj0KCQjwsp6pBhCfARIsAD3GZuYt3-b5vSO_sZJDDln6yFD5ab3fuR7ENCMqySChoKTwQWBWe4e9FZwaAhSUEALw_wcB&gclsrc=aw.ds">official Website</a></li>
@@ -178,7 +190,9 @@ include ("../header.php");?>
             <li><a href="https://www.google.com/maps/place/Ember+Locke,+Kensington/@51.494963,-0.1969981,17z/data=!3m1!4b1!4m9!3m8!1s0x48760f674a575d2f:0xf5f092f4b9b35b12!5m2!4m1!1i2!8m2!3d51.4949597!4d-0.1944178!16s%2Fg%2F11tt91kwd3?entry=ttu">Map Location</a></li>
         </ul>
         <p>I take a snapshot of map location</p> 
-        <!-- Millennium Hotel London Knightsbridge -->
+        
+    <!-- Millennium Hotel London Knightsbridge Section -->
+        
         <h2>Millennium Hotel London Knightsbridge</h2>
         <ul>
             <li><a href="https://www.millenniumhotels.com/en/london/millennium-hotel-london-knightsbridge/?,&utm_source=google&utm_medium=cpc&utm_campaign=EU&utm_term=external&utm_content=Generic&utm_source=google&utm_medium=cpc&utm_campaign=EU&utm_content=millennium%20hotel%20london%20knightsbridge&utm_term=external&gclid=Cj0KCQjwsp6pBhCfARIsAD3GZuaS4YX98igxz6Y23l-X8Da3pJenomVZ3uY_kO09tcOYRCdKXYWBGXsaAkbkEALw_wcB&gclsrc=aw.ds">official Website</a></li>

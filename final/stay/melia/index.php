@@ -49,5 +49,5 @@ include ("../../header.php");
     <p>Address: 61 Gloucester Rd, South Kensington, London SW7 4PE, United Kingdom</p>
     <p>Phone Number: 020 7437 9585</p>
     <p>Email: info@quovadissoho.co.uk</p>
-    <?php include ("../footer.php"); ?>
+    <?php include ("../../footer.php"); ?>
 </fieldset>

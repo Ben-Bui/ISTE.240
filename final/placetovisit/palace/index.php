@@ -62,6 +62,6 @@ include ("../../header.php");
             <p>Phone Number: +44 (0)303 123 7324</p>
             <p>Email: specialistsales@rct.uk</p>
         </fieldset>
-        <?php include ("../footer.php"); ?>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

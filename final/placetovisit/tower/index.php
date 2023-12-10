@@ -79,6 +79,6 @@ include ("../../header.php");
             <p>Phone Number: +44 333 320 6000</p>
             <p>Email: development@hrp.org.uk.</p>
         </fieldset>
-        <?php include ("../footer.php"); ?>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

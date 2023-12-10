@@ -65,6 +65,6 @@ include ("../../header.php");
             <p>Phone Number: 020 7251 0848</p>
             <p>Email for Reservation: reservations@stjohnrestaurant.com</p>
         </fieldset>
-        <?php include ("../footer.php"); ?>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

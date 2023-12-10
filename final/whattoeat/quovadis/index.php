@@ -72,6 +72,6 @@ include ("../../header.php");
             <p>Phone Number: 020 7437 9585</p>
             <p>Email: info@quovadissoho.co.uk</p>
         </fieldset>
-        <?php include ("../footer.php"); ?>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

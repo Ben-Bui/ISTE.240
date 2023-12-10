@@ -48,6 +48,6 @@ include ("../../header.php");
             <p>Phone Number: +44 2072 354377</p>
             <p>Email: RESERVATIONS.KNIGHTSBRIDGE@MILLENNIUMHOTELS.COM</p>
         </fieldset>
-        <?php include ("../footer.php"); ?>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

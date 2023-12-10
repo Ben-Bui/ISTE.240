@@ -77,5 +77,6 @@ include ("../../header.php");
             <p>Adress: London SW1A 0AA, UK</p>
             <p>Phone Number: +44 20 7219 4272</p>
         </fieldset>
+        <?php include ("../../footer.php"); ?>
 </body>
 </html>

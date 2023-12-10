@@ -10,9 +10,10 @@ include ("../header.php");
         When mouserover trigger, the Javascript function mouseroverEnlarge will happen, increasing the width and height of the image to make the picture bigger. 
         When user move the mouse away, trigger an mouseout, which trigger the mouseoutOriginalSize happen return the images to the intended size orgiinally. I use this script for all 
         of my pages which would be consistent</p>
-    <h2>Extra</h2>
-    <li>I added an captcha, though I don't know if it work, I put it in the comments form page, 
-        I just follow instruction on the website, it would be helpfull if you give me more insight</li>
-    <li>I added an favicon, a ico file of an airplane I found free online, the plane symbolise for travelling, which is the purpose of my website</li>
-
+    <ul>
+        <h2>Extra</h2>
+        <li>I added an captcha, though I don't know if it work, I put it in the comments form page, 
+            I just follow instruction on the website, it would be helpfull if you give me more insight</li>
+        <li>I added an favicon, a ico file of an airplane I found free online, the plane symbolise for travelling, which is the purpose of my website</li>
+    </ul>
     <?php include ("../footer.php"); ?>

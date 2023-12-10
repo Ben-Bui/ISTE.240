@@ -3,11 +3,8 @@ $pageTitle = "Comment Pages";
 $welcometitle = "Comment Pages";
 include ("../header.php");
 ?>
-<script scr="comments.js"></script>
+<script src="comments.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-</head>
-<body>
     <h1>Leave a Comment</h1>
     <!-- Comment Form -->
     <form action="process_comments.php" method="post" onsubmit="return validateForm()">

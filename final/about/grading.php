@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "About Me";
 $welcometitle = "Grading Myself";
-include ("../../header.php");
+include ("../header.php");
 ?>
     <h2>Original Javascript and DHTML combine</h2>
     <p>As suggest that I could combine them together so I did just that, because my website is mainly focusing on tourism, I don't think I added something silly, 
@@ -10,4 +10,4 @@ include ("../../header.php");
         When mouserover trigger, the Javascript function mouseroverEnlarge will happen, increasing the width and height of the image to make the picture bigger. 
         When user move the mouse away, trigger an mouseout, which trigger the mouseoutOriginalSize happen return the images to the intended size orgiinally. I use this script for all 
         of my pages which would be consistent</p>
-<?php include ("../../footer.php"); ?>
+<?php include ("../footer.php"); ?>

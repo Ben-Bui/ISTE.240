@@ -6,8 +6,8 @@ window.onload = function() {
         const originalHeight = image.clientHeight;
 
         function enlargeImage() {
-            image.style.width = `${originalWidth * 2}px`; // Increase width by 20%
-            image.style.height = `${originalHeight * 2}px`; // Increase height by 20%
+            image.style.width = `${originalWidth * 2}px`; // Increase width 
+            image.style.height = `${originalHeight * 2}px`; // Increase height 
         }
 
         function revertImageSize() {

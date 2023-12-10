@@ -41,5 +41,6 @@ include ("../../header.php");
             <p>Phone Number: 0203 478 6726</p>
             <p>Email: info@cafececilia.com</p>
         </fieldset>
+        <?php include ("../footer.php"); ?>
 </body>
 </html>

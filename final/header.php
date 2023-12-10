@@ -26,6 +26,7 @@
                 <a href="#">Home </a> 
                 <ul class="submenu">
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php">General Information</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/citation/index.php">Citation</a></li>
                 </ul>
             </li>
             <!-- I will use this as the seperator -->

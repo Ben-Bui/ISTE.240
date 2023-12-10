@@ -54,7 +54,8 @@ include ("../../header.php");?>
             </ul>
                 <p>Adress: Great Russell Street London WC1B 3DG</p>
                 <p>Phone Number: +44 (0)20 7323 8000</p>
-            
         </fieldset>
+        <?php include ("../footer.php"); ?>
+
 </body>
 </html>

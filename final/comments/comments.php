@@ -12,7 +12,7 @@ include ("../header.php");
         var phone = document.getElementById('phone').value;
 
         if (name.trim() === '' || comment.trim() === '') {
-            alert('Name and Comment are required fields.');
+            alert('Please input name and comments.');
             return false;
         }
 
@@ -38,6 +38,7 @@ include ("../header.php");
         
         <input type="submit" value="Submit">
     </form>
+    <?php include ("../footer.php"); ?>
 
     <hr>
 

@@ -36,7 +36,7 @@ include ("../../header.php");
                     Contact</a></li>
             </ul>
             <p>Address: 02-220, Cromwell Rd, London SW5 0SW, United Kingdom</p>
-
         </fieldset>
+        <?php include ("../footer.php"); ?>
 </body>
 </html>

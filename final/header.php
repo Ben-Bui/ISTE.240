@@ -5,18 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="../../imageEnlarge.js" defer></script>
+
     <!-- Title will be dynamically set for each page -->
     <title><?php echo $pageTitle; ?></title>
-    <style>
-    /* Breadcrumb  */
-        .breadcrumb {
-            margin: 10px 0;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        
-    </style>
-    
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+
 </head>
 <body>
     <h1><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php"><?php echo $welcometitle; ?></a></h1>

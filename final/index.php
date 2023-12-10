@@ -4,6 +4,7 @@ $welcometitle = "Welcome to London";
 include ("header.php");?>
 
 <script src="imageEnlarge.js" defer></script>
+<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
 
     <figure>
         <img class="picture" src="img/here_is_london.jpg" id="pic" alt="where is london" >

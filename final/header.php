@@ -65,7 +65,7 @@
                 <!-- Use hotel that i look up from just google-->
                 <a href="#">Comments </a> 
                 <ul class="submenu">
-                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/comments/comments.php">Melia London Kensington a Melia Collection Hotel</a></li>
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/comments/comments.php">Comments</a></li>
                 </ul> 
             </li>
         </ul>       

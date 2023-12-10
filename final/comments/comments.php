@@ -1,7 +1,7 @@
 <?php
 $pageTitle = "Comment Pages";
 $welcometitle = "Comment Pages";
-include (../"header.php");?>
+include ("../header.php");?>
     <script>
         // JavaScript for Image Gallery
         function displayImage(imageId) {
@@ -58,9 +58,9 @@ include (../"header.php");?>
     
     <!-- Image Gallery -->
     <div class="gallery">
-        <img class="gallery-img" src="image1.jpg" alt="Image 1" onclick="displayImage('image1')">
-        <img class="gallery-img" src="image2.jpg" alt="Image 2" onclick="displayImage('image2')">
-        <img class="gallery-img" src="image3.jpg" alt="Image 3" onclick="displayImage('image3')">
+        <img class="gallery-img" src="img/british_museum.jpg" alt="Image 1" onclick="displayImage('image1')">
+        <img class="gallery-img" src="img/buckinghampalace.jpg" alt="Image 1" onclick="displayImage('image1')">
+        <img class="gallery-img" src="toweroflondon.jpg" alt="Image 3" onclick="displayImage('image3')">
     </div>
 
     <!-- Images for Gallery -->

@@ -3,6 +3,7 @@ $pageTitle = "St. John";
 $welcometitle = "St.John Restaurant";
 include ("../../header.php");
 ?>
+
     <figure>
         <img class="picture" src="stjohn.jpg" id="tower" alt="tower">
     </figure>

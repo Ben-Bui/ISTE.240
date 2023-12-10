@@ -1,6 +1,6 @@
 <?php
-$pageTitle = "Cecilia";
-$welcometitle = "Cecilia";
+$pageTitle = "Café Cecilia";
+$welcometitle = "Café Cecilia";
 include ("../../header.php");
 ?>
     <figure>
@@ -36,7 +36,7 @@ include ("../../header.php");
                     Their Home Website with Menu</a></li>
                 <li> <a href="https://resy.com/cities/ldn/cafe-cecilia?date=2023-10-13&seats=2">
                     Reservation</a></li>
-            </u>
+            </ul>
             <p>Address: Canal Place, 32 Andrews Road, Hackney, London E8 4FX</p>
             <p>Phone Number: 0203 478 6726</p>
             <p>Email: info@cafececilia.com</p>

@@ -47,16 +47,11 @@ include ("../../header.php");
         <fieldset>
             <legend>How to Contact Them!!</legend>        
             <ul class="formelement">
-                <li> <a href="https://www.rct.uk/visit/buckingham-palace">
-                    The Buckingham Palace Website for more Information</a></li>
-                <li> <a href="https://www.rct.uk/visit/buckingham-palace##prices">
-                    Ticket and Prices, it is very limited</a></li>
-                <li> <a href="https://www.rct.uk/visit/buckingham-palace##times">
-                    Opening Time</a></li>
-                <li> <a href="https://www.rct.uk/visit/buckingham-palace##highlights">
-                    Hihglight</a></li>
-                <li> <a href="https://www.rct.uk/visit/buckingham-palace">
-                    Must know information before visit!!!</a></li>
+                <li> <a href="https://www.rct.uk/visit/buckingham-palace">The Buckingham Palace Website for more Information</a></li>
+                <li> <a href="https://www.rct.uk/visit/buckingham-palace-prices">Ticket and Prices, it is very limited</a></li>
+                <li> <a href="https://www.rct.uk/visit/buckingham-palace-times">Opening Time</a></li>
+                <li> <a href="https://www.rct.uk/visit/buckingham-palace-highlights">Highlight</a></li>
+                <li> <a href="https://www.rct.uk/visit/buckingham-palace-must-know">Must know information before visit!!!</a></li>
             </ul>
             <p>Adress: Entrance to the State Rooms is via gate C on Buckingham Gate, London, SW1A 1AA</p>
             <p>Phone Number: +44 (0)303 123 7324</p>

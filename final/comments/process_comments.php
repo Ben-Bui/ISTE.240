@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: comments.php");
     exit();
 }
-$recaptchaSecretKey = '6LcbSiwpAAAAAN34cZw9Ub2BVbi-3AqWROmNmter'; // Replace with your secret key from Google reCAPTCHA
+$recaptchaSecretKey = "6LcbSiwpAAAAAN34cZw9Ub2BVbi-3AqWROmNmter"; 
 
 $recaptchaResponse = $_POST['g-recaptcha-response'];
 $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';

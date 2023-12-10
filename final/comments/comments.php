@@ -1,34 +1,42 @@
 <?php
 $pageTitle = "Comment Pages";
 $welcometitle = "Comment Pages";
-include ("../header.php");?>
-    <script>
-        // JavaScript for Image Gallery
-        function displayImage(imageId) {
-            var images = document.getElementsByClassName("gallery-img");
-            for (var i = 0; i < images.length; i++) {
-                images[i].style.display = "none";
-            }
-            document.getElementById(imageId).style.display = "block";
+include ("../header.php");
+?>
+<script>
+    // JavaScript validation function
+    function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var comment = document.getElementById('comment').value;
+        var phone = document.getElementById('phone').value;
+
+        if (name.trim() === '' || comment.trim() === '') {
+            alert('Name and Comment are required fields.');
+            return false;
         }
-    </script>
+
+        return true;
+    }
+</script>
 </head>
 <body>
     <h1>Leave a Comment</h1>
     <!-- Comment Form -->
     <form action="process_comments.php" method="post" onsubmit="return validateForm()">
-    <label for="name">Name:</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
 
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
         <label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-
-        <!-- Add more fields if needed -->
         
-        <input type="submit" value="Submit" onclick="changeColor()">
+        <input type="submit" value="Submit">
     </form>
 
     <hr>
@@ -36,8 +44,7 @@ include ("../header.php");?>
     <h2>Previous Comments</h2>
     <!-- Display Previous Comments -->
     <?php
-    include("../../../dbConn.php"); // Include your database connection file
-
+    include("../../../dbConn.php");
     $sql = "SELECT * FROM `comments` LIMIT 50";
     $result = $conn->query($sql);
 
@@ -45,6 +52,7 @@ include ("../header.php");?>
         while ($row = $result->fetch_assoc()) {
             echo "<p><strong>Name:</strong> " . $row["from"] . "<br>";
             echo "<strong>Email:</strong> " . $row["email"] . "<br>";
+            echo "<strong>Phone:</strong> " . $row["phone"] . "<br>";
             echo "<strong>Comment:</strong> " . $row["message"] . "</p><hr>";
         }
     } else {

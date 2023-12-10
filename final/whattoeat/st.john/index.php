@@ -3,7 +3,6 @@ $pageTitle = "St. John";
 $welcometitle = "St.John Restaurant";
 include ("../../header.php");
 ?>
-
     <figure>
         <img class="picture" src="stjohn.jpg" id="tower" alt="tower">
     </figure>
@@ -37,19 +36,17 @@ include ("../../header.php");
             </p>
     </div>
     <!-- should give them map of the three location -->
-    <script src="stjohn.js"></script>
-    <div class="image-gallery">
-        <h1>They Have Three Location Across London</h1>
-        <div class="gallery">
-            <img class="picture" src="smithfield.JPG" id="smithfieldmap" alt="smithfieldmap">
-            <img class="picture" src="breadandwine.JPG" id="breadandwinemap" alt="breadandwinemap">
-            <img class="picture" src="marylebone.JPG" id="marylebonemap" alt="marylebone">
-        </div>
-        <div class="controls">
-            <button onclick="prevImage()">Previous</button>
-            <button onclick="nextImage()">Next</button>
-        </div>
-    </div>
+    <h1>They Have Three Location Across London</h1>
+    <figure>
+        <img class="picture" src="smithfield.JPG" id="smithfieldmap" alt="smithfieldmap">
+    </figure>
+    <figure>
+        <img class="picture" src="breadandwine.JPG" id="breadandwinemap" alt="breadandwinemap">
+    </figure>
+    <figure>
+        <img class="picture" src="marylebone.JPG" id="marylebonemap" alt="marylebone">
+    </figure>
+    
     <!-- General contact infromation and website, also add Address and phone number -->
         <fieldset>
             <legend>How to Contact Them!!</legend>        

@@ -3,22 +3,7 @@ $pageTitle = "Comment Pages";
 $welcometitle = "Comment Pages";
 include ("../header.php");
 ?>
-<script>
-    // JavaScript validation function
-    function validateForm() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('email').value;
-        var comment = document.getElementById('comment').value;
-        var phone = document.getElementById('phone').value;
-
-        if (name.trim() === '' || comment.trim() === '') {
-            alert('Please input name and comments.');
-            return false;
-        }
-
-        return true;
-    }
-</script>
+<script scr="comments.js"></script>
 </head>
 <body>
     <h1>Leave a Comment</h1>

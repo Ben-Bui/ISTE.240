@@ -3,7 +3,7 @@ $pageTitle = "Homepage";
 $welcometitle = "Welcome to London";
 include ("header.php");?>
 
-    
+<script src="imageEnlarge.js" defer></script>
 
     <figure>
         <img class="picture" src="img/here_is_london.jpg" id="pic" alt="where is london" >
@@ -11,7 +11,7 @@ include ("header.php");?>
     
     <div class="general">
         <!-- Let user know what to expect if they go to London -->
-        <h1> Experience in London</h1>
+        <h2> Experience in London</h1>
         <p>Welcome to London, this city is the iconic and vibrant, but not only it is the capital of the 
             United Kingdom but also a place where history, culture, and modern meet. London offers many of experiences, from 
             exploring historic landmarks like the Tower of London and Buckingham Palace to 
@@ -22,7 +22,7 @@ include ("header.php");?>
         </div>
  <!-- Brief History of London give user background -->
         <div class="history">
-            <h1> A bit history of London</h1>
+            <h2> A bit history of London</h1>
             <p> London's history spans over two thousand years. Its began when the Roman  
                 called found it and name "Londinium" around AD 43. This  town 
                 grew as a bustling trading hub on the banks of the River Thames.

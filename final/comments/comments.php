@@ -13,13 +13,13 @@ include ("../header.php");
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
-
+        <!-- Added a phone section field for extra cred -->
         <label for="phone">Phone:</label>
         <input type="text" id="phone" name="phone"><br><br>
 
         <label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-            <!-- Google reCAPTCHA -->
+            <!-- Google reCAPTCHA just follow instruction  -->
         <div class="g-recaptcha" data-sitekey="6LcbSiwpAAAAALxqgfPzR2LcyEVowaK67y5n_96B"></div>
 
         <input type="submit" value="Submit">
@@ -30,7 +30,7 @@ include ("../header.php");
     <hr>
 
     <h2>Previous Comments</h2>
-    <!-- Display Previous Comments -->
+    <!-- Display Previous Comments from databse on adminer-->
     <?php
     include("../../../dbConn.php");
     $sql = "SELECT * FROM `comments` LIMIT 50";

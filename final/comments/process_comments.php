@@ -33,6 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: comments.php");
     exit();
 }
+// Captcha, follow internet instruction 
 $recaptchaSecretKey = "6LcbSiwpAAAAAN34cZw9Ub2BVbi-3AqWROmNmter"; 
 
 $recaptchaResponse = $_POST['g-recaptcha-response'];

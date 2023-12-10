@@ -1,13 +1,18 @@
-/* Typography adjustments */
+/* Typography adjustments like suggested*/
 body {
     background-color: lightslategray;
     font-family: Arial, sans-serif;
     line-height: 1.6; 
 }
+.breadcrumb {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
 h1{
     text-align: center;
 }
-/* Centering for images */
+/* Centering for images for better visual*/
 .picture {
     display: block;
     margin-left: auto;
@@ -23,14 +28,14 @@ h1{
     }
 }
 
-/* Content boxes padding */
+/* Content boxes padding like suggested*/
 .general, .history {
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; /* Adjust padding */
 }
 
-/* Adjust text alignment */
+/* Adjust text alignment like suggested*/
 h2, p {
-    text-align: left; /* Left align for better readability */
+    text-align: left; /* Left align for better readability instead of centering */
 }
 
 /* Styling for dropdown navigation */

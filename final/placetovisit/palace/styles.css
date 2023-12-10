@@ -1,20 +1,23 @@
-/* Typography adjustments */
+/* Typography adjustments per suggest */
 body {
     background-color: lightslategray;
     font-family: Arial, sans-serif;
     line-height: 1.6; 
 }
-h1{
-    text-align: center;
-}
-/* Centering for images */
+h1{text-align: center;}
+/* Centering for images for better visual */
 .picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
+/* Breadcrumb as requested  */
+.breadcrumb {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
 /* Change image size on mobile */
 @media only screen and (max-width: 480px) {
     .picture {
@@ -25,11 +28,11 @@ h1{
 
 /* Padding for content boxes */
 .info {
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; /* Adjust padding */
 }
 
-/* Adjust text alignment */
-h2,p {
+/* Adjust text alignment not center per request*/
+h2, p {
     text-align: left; /* Left align for better readability */
 }
 /* Styling for dropdown navigation */
@@ -48,7 +51,7 @@ h2,p {
     position: relative;
 }
 
-/* Enhance dropdown links visibility */
+/* dropdown links visibility */
 .dropdown .submenu {
     flex-direction: column;
     position: absolute;

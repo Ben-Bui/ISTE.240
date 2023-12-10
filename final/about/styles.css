@@ -14,12 +14,6 @@ h1{
         height: 100%;
     }
 }
-/* Breadcrumb  */
-    .breadcrumb {
-        margin: 10px 0;
-        font-size: 16px;
-        font-weight: bold;
-    }
     
 /* Content boxes padding */
 .general, .history {

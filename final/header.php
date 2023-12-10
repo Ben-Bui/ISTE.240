@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php"><?php echo $welcometitle; ?></a></h1>
-    
+    <!-- I did try to change the absolute URL thing, but I keep getting error so I can't do anything about it -->
     <hr>
     <nav class="dropdown">
         <ul>
@@ -24,7 +24,9 @@
                 <a href="#">Home </a> 
                 <ul class="submenu">
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php">General Information</a></li>
+                    <!-- Add citation to nav bar because the previous one was hard to see -->
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/citation/index.php">Citation</a></li>
+                    <!-- Grading page per requirement  -->
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/about/grading.php">Grading</a></li>
                 </ul>
             </li>
@@ -71,9 +73,8 @@
         </ul>       
     </nav>
     
-    <!-- Breadcrumb for indicating page hierarchy -->
+    <!-- Breadcrumb for indicate pages like suggestion-->
     <div class="breadcrumb">
         <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php">Home</a> &raquo; 
-        <!-- Add dynamic breadcrumb for the subpage -->
         <?php echo $pageTitle; ?>
     </div>

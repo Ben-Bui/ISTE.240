@@ -60,6 +60,14 @@
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/millennium/index.php">Millennium Hotel London Knightsbridge</a></li>
                 </ul> 
             </li>
+            <li> | </li>
+            <li>
+                <!-- Use hotel that i look up from just google-->
+                <a href="#">Comments </a> 
+                <ul class="submenu">
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/comments/comments.php">Melia London Kensington a Melia Collection Hotel</a></li>
+                </ul> 
+            </li>
         </ul>       
     </nav>
     

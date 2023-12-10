@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Comments Page</title>
-    <style>
-        /* CSS for DHTML component */
-        #dynamicElement {
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            transition: background-color 0.5s ease-in-out;
-        }
-        /* CSS for Image Gallery */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            width: 150px;
-            margin: 5px;
-            cursor: pointer;
-            transition: opacity 0.5s ease-in-out;
-        }
-        .gallery img:hover {
-            opacity: 0.7;
-        }
-    </style>
+<?php
+$pageTitle = "Comment Pages";
+$welcometitle = "Comment Pages";
+include (../"header.php");?>
     <script>
         // JavaScript for Image Gallery
         function displayImage(imageId) {

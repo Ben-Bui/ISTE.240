@@ -1,0 +1,66 @@
+/* Typography adjustments */
+body {
+    background-color: lightslategray;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
+}
+h1{text-align: center;}
+/* Centering for images */
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Change image size on mobile */
+@media only screen and (max-width: 480px) {
+    .picture {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Padding for content boxes */
+.info {
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Adjust text alignment */
+h2, p {
+    text-align: left; /* Left align for better readability */
+}
+/* Styling for dropdown navigation */
+.dropdown ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: lightblue;
+}
+
+.dropdown li {
+    padding: 10px;
+    position: relative;
+}
+
+/* Enhance dropdown links visibility */
+.dropdown .submenu {
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    background: lightblue;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown li:hover {
+    background: lightpink;
+}
+
+.dropdown li:hover .submenu {
+    visibility: visible;
+    opacity: 100;
+}

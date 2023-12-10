@@ -1,0 +1,44 @@
+body {
+    background-color: lightslategray;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
+}
+h1{
+    text-align: center;
+}
+h2, p {
+    text-align: left; /* Left align for better readability */
+}
+.dropdown ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: lightblue;
+}
+
+.dropdown li {
+    padding: 10px;
+    position: relative;
+}
+
+/* Enhance dropdown links visibility */
+.dropdown .submenu {
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    background: lightblue;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown li:hover {
+    background: lightpink;
+}
+
+.dropdown li:hover .submenu {
+    visibility: visible;
+    opacity: 100;
+}

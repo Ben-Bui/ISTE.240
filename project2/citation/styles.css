@@ -1,0 +1,65 @@
+/* Apply a different font for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightslategray;
+}
+
+/* Center align h1 */
+h1 {
+    text-align: center;
+}
+
+/* Give space above and below the hr */
+hr {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style the dropdown menu */
+.dropdown ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: lightblue;
+}
+
+.dropdown li {
+    padding: 10px;
+    position: relative;
+}
+
+.dropdown .submenu {
+    flex-direction: column;
+    position: absolute;
+    top: 38px;
+    background: lightblue;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown li:hover {
+    background: lightpink;
+}
+
+.dropdown li:hover .submenu {
+    visibility: visible;
+    opacity: 100;
+}
+
+/* Style the citation section */
+.citation {
+    text-align: left; /* Avoid center align for large blocks of text */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Add padding to boxes with content */
+.citation h2,
+.citation p {
+    padding: 10px;
+}

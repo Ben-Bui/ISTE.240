@@ -33,4 +33,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: comments.php");
     exit();
 }
+$recaptchaSecretKey = '6LcbSiwpAAAAAN34cZw9Ub2BVbi-3AqWROmNmter'; // Replace with your secret key from Google reCAPTCHA
+
+$recaptchaResponse = $_POST['g-recaptcha-response'];
+$recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+$recaptchaData = [
+    'secret' => $recaptchaSecretKey,
+    'response' => $recaptchaResponse,
+];
+
+$recaptchaOptions = [
+    'http' => [
+        'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method' => 'POST',
+        'content' => http_build_query($recaptchaData),
+    ],
+];
+
+$recaptchaContext = stream_context_create($recaptchaOptions);
+$recaptchaResult = file_get_contents($recaptchaUrl, false, $recaptchaContext);
+$recaptchaJson = json_decode($recaptchaResult);
+
+if (!$recaptchaJson->success) {
+    // Handle invalid CAPTCHA verification
+    echo "Invalid CAPTCHA. Please try again.";
+    exit();
+}
 ?>

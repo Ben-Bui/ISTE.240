@@ -4,6 +4,8 @@ $welcometitle = "Comment Pages";
 include ("../header.php");
 ?>
 <script scr="comments.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
     <h1>Leave a Comment</h1>
@@ -20,9 +22,12 @@ include ("../header.php");
 
         <label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-        
+            <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LcbSiwpAAAAALxqgfPzR2LcyEVowaK67y5n_96B"></div>
+
         <input type="submit" value="Submit">
     </form>
+    
     <?php include ("../footer.php"); ?>
 
     <hr>

@@ -15,9 +15,11 @@
         }
         
     </style>
+    
 </head>
 <body>
     <h1><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php"><?php echo $welcometitle; ?></a></h1>
+    
     <hr>
     <nav class="dropdown">
         <ul>

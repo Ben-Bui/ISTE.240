@@ -1,37 +1,37 @@
 <?php
-// Include the database connection file
-include("../../../dbConn.php");
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Define variables and initialize with empty values
-    $name = $email = $comment = "";
+    include("../../../dbConn.php");
 
-    // Processing form data when form is submitted
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $comment = $_POST["comment"];
-
-    // Prepare an SQL statement to insert data into the database
-    $sql = "INSERT INTO `comments` (`from`, `email`, `message`, `date`) VALUES (?, ?, ?, NOW())";
-
-    if ($stmt = $conn->prepare($sql)) {
-        // Bind variables to the prepared statement as parameters
-        $stmt->bind_param("sss", $name, $email, $comment);
-
-        // Attempt to execute the prepared statement
-        if ($stmt->execute()) {
-            // Redirect back to the comments page after successful submission
-            header("location: comments.php");
-            exit();
-        } else {
-            echo "Oops! Something went wrong. Please try again later.";
-        }
+    function sanitizeData($data) {
+        $data = trim($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
 
-    // Close statement
-    $stmt->close();
-}
+    $name = sanitizeData($_POST['name']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL); // Sanitize email
+    $comment = sanitizeData($_POST['comment']);
 
-// Close connection
-$conn->close();
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit();
+    }
+
+    $stmt = $conn->prepare("INSERT INTO comments (name, email, comment) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $comment);
+
+    if ($stmt->execute()) {
+        header("Location: comments.php");
+        exit();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+
+    $stmt->close();
+    $conn->close();
+} else {
+    header("Location: comments.php");
+    exit();
+}
 ?>

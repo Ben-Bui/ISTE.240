@@ -1,15 +1,52 @@
 <?php
 $pageTitle = "Comment Pages";
 $welcometitle = "Comment Pages";
-include ("../header.php");?>
+include("../header.php");
+
+// Database connection
+include("../../../dbConn.php");
+
+// Fetch previous comments
+$sql = "SELECT * FROM comments LIMIT 50";
+$result = $conn->query($sql);
+
+$previousComments = [];
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $previousComments[] = $row;
+    }
+}
+
+$conn->close();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php echo $pageTitle; ?></title>
+    <style>
+        /* Your CSS styles here */
+    </style>
     <script>
-        // JavaScript for Image Gallery
-        function displayImage(imageId) {
-            var images = document.getElementsByClassName("gallery-img");
-            for (var i = 0; i < images.length; i++) {
-                images[i].style.display = "none";
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var comment = document.getElementById('comment').value;
+            var emailRegex = /^\S+@\S+\.\S+$/;
+
+            if (name.trim() === '' || email.trim() === '' || comment.trim() === '') {
+                alert('Please fill in all fields.');
+                return false;
             }
-            document.getElementById(imageId).style.display = "block";
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return false;
+            }
+
+            // Add more specific validation rules if needed
+
+            return true;
         }
     </script>
 </head>
@@ -17,7 +54,7 @@ include ("../header.php");?>
     <h1>Leave a Comment</h1>
     <!-- Comment Form -->
     <form action="process_comment.php" method="post" onsubmit="return validateForm()">
-    <label for="name">Name:</label>
+        <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br><br>
 
         <label for="email">Email:</label>
@@ -26,52 +63,23 @@ include ("../header.php");?>
         <label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
 
-        <!-- Add more fields if needed -->
-        
-        <input type="submit" value="Submit" onclick="changeColor()">
+        <!-- Additional fields can be added here if needed -->
+
+        <input type="submit" value="Submit">
     </form>
 
     <hr>
 
     <h2>Previous Comments</h2>
     <!-- Display Previous Comments -->
-    <?php
-    include("../../../dbConn.php"); // Include your database connection file
-
-    $sql = "SELECT * FROM `comments` LIMIT 50";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            echo "<p><strong>Name:</strong> " . $row["from"] . "<br>";
-            echo "<strong>Email:</strong> " . $row["email"] . "<br>";
-            echo "<strong>Comment:</strong> " . $row["message"] . "</p><hr>";
-        }
-    } else {
-        echo "No comments yet.";
-    }
-
-    $conn->close();
-    ?>
-    <!-- DHTML Component -->
-    <div id="dynamicElement"></div>
-    
-    <!-- Image Gallery -->
-    <div class="gallery">
-        <img class="gallery-img" src="img/british_museum.jpg" alt="Image 1" onclick="displayImage('image1')">
-        <img class="gallery-img" src="img/buckinghampalace.jpg" alt="Image 1" onclick="displayImage('image1')">
-        <img class="gallery-img" src="toweroflondon.jpg" alt="Image 3" onclick="displayImage('image3')">
-    </div>
-
-    <!-- Images for Gallery -->
-    <div id="image1" class="gallery-img" style="display: none;">
-        <img src="image1.jpg" alt="Image 1">
-    </div>
-    <div id="image2" class="gallery-img" style="display: none;">
-        <img src="image2.jpg" alt="Image 2">
-    </div>
-    <div id="image3" class="gallery-img" style="display: none;">
-        <img src="image3.jpg" alt="Image 3">
-    </div>
+    <?php if (!empty($previousComments)) : ?>
+        <?php foreach ($previousComments as $comment) : ?>
+            <p><strong>Name:</strong> <?php echo htmlspecialchars($comment['name']); ?><br>
+            <strong>Email:</strong> <?php echo htmlspecialchars($comment['email']); ?><br>
+            <strong>Comment:</strong> <?php echo htmlspecialchars($comment['comment']); ?></p><hr>
+        <?php endforeach; ?>
+    <?php else : ?>
+        <p>No comments yet.</p>
+    <?php endif; ?>
 </body>
 </html>

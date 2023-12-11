@@ -1,21 +1,21 @@
 window.onload = function() {
-    const images = document.querySelectorAll('.picture');
+    const pictures = document.querySelectorAll('.picture');
 
-    images.forEach(image => {
-        const originalWidth = image.clientWidth;
-        const originalHeight = image.clientHeight;
+    pictures.forEach(picture => {
+        const defaultWidth = picture.clientWidth;
+        const defaultHeight = picture.clientHeight;
 
-        function enlargeImage() {
-            image.style.width = `${originalWidth * 2}px`; // Increase width 
-            image.style.height = `${originalHeight * 2}px`; // Increase height 
+        function zoomIn() {
+            picture.style.width = `${defaultWidth * 2}px`; // Increase width 
+            picture.style.height = `${defaultHeight * 2}px`; // Increase height 
         }
 
-        function revertImageSize() {
-            image.style.width = `${originalWidth}px`; // Restore original width
-            image.style.height = `${originalHeight}px`; // Restore original height
+        function zoomOut() {
+            picture.style.width = `${defaultWidth}px`; // Restore original width
+            picture.style.height = `${defaultHeight}px`; // Restore original height
         }
 
-        image.addEventListener('mouseover', enlargeImage);
-        image.addEventListener('mouseout', revertImageSize);
+        picture.addEventListener('mouseover', zoomIn);
+        picture.addEventListener('mouseout', zoomOut);
     });
 };

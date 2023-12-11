@@ -11,13 +11,15 @@
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <script src="../../darkmode.js" defer></script>
     <script src="darkmode.js" defer></script>
-    <button onclick="darkmode()">Change to darkmode</button>
 
     <!-- Title will be dynamically set for each page -->
     <title><?php echo $pageTitle; ?></title>
 
+
 </head>
 <body>
+    <button onclick="darkmode()">Change to darkmode</button>
+    <button onclick="lightmode()">Change to lightmode</button>
     <h1><a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/index.php"><?php echo $welcometitle; ?></a></h1>
     <!-- I did try to change the absolute URL thing, but I keep getting error so I can't do anything about it -->
     <hr>

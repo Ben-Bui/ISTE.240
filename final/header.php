@@ -34,6 +34,8 @@
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/citation/index.php">Citation</a></li>
                     <!-- Grading page per requirement  -->
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/about/grading.php">Grading</a></li>
+                    <!-- Comments page -->
+                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/comments/comments.php">Comments</a></li>
                 </ul>
             </li>
             <!-- I will use this as the seperator -->
@@ -66,14 +68,6 @@
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/melia/index.php">Melia London Kensington a Melia Collection Hotel</a></li>
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/emberlocke/index.php">Ember Locke</a></li>
                     <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/stay/millennium/index.php">Millennium Hotel London Knightsbridge</a></li>
-                </ul> 
-            </li>
-            <li> | </li>
-            <li>
-                <!-- Use hotel that i look up from just google-->
-                <a href="#">Comments </a> 
-                <ul class="submenu">
-                    <li> <a href="http://solace.ist.rit.edu/~btb4516/ISTE240/final/comments/comments.php">Comments</a></li>
                 </ul> 
             </li>
         </ul>       

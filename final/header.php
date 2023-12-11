@@ -10,6 +10,7 @@
     <link rel="icon" type="image/x-icon" href="../../favicon/favicon.ico">
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <script src="../../darkmode.js" defer></script>
+    <script src="../darkmode.js" defer></script>
     <script src="darkmode.js" defer></script>
 
     <!-- Title will be dynamically set for each page -->

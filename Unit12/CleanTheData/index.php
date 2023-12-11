@@ -19,7 +19,7 @@
 		$date = sanitize($_POST['date']);
 		$email = sanitize($_POST['email']);
 
-
+		
 
 		//now let validate the date
 		if(!date1($_POST['date'])){

@@ -183,19 +183,89 @@
         later so you don't need to upload all your work to the webserver yet.
     </p>
 
+    <form method="post" action="process.php">
+        Name: <input type="text" name="name" id="name"/> <br/>
+        Age: <input type="text" name="age" id="age"/> <br/>
+        Favorite Color:<br/>
+        <input type="radio" name="favcolor" id="red"/> Red <br/>
+        <input type="radio" name="favcolor" id="green"/> Green <br/>
+        <input type="radio" name="favcolor" id="blue"/> Blue <br/>
+
+        <input type="submit">
+
+    </form>
+
     <h4>Form Ex2</h4>
     <p>In the form you created above lets add some javascript validation that Prevents the form from submitting to the process.php if:<br/> 
             1) the name is left blank.<br/>
             2) CHALLENGE: make sure age is numeric using javascript. You may use w3schools to look up tips on this.
             This will give you some practice finding things on w3schools.
     </p>
+
+    <!-- <script>
+        function validate(){
+            name = document.getElementById("name").value;
+            age = document.getElementById("age").value;
+            age = parseInt(age)
+            
+            if(name == ""){
+                alert("Please fill in a name");
+                return false
+            }
+            
+            if(!Number.isInteger(age)){
+                alert("age must be numeric");
+                return false
+            }
+            return true;
+        }
+
+    </script>
+
+    <form method="post" action="process.php" onsubmit="return validate()">
+        Name: <input type="text" name="name" id="name"/> <br/>
+        Age: <input type="text" name="age" id="age"/> <br/>
+        Favorite Color:<br/>
+        <input type="radio" name="favcolor" id="red"/> Red <br/>
+        <input type="radio" name="favcolor" id="green"/> Green <br/>
+        <input type="radio" name="favcolor" id="blue"/> Blue <br/>
+
+        <input type="submit" value = "submit"> 
     
+    CHECK test.php for this question it must be seperate for it to work-->
+
     <h3>PHP</h3>
     <p>At this point you will need to upload your code to solace so that we can do php and database.</p>
     <h4>PHP Ex1</h4>
     <p>Once your form passes JS validation you should end up at process.php.
         On Process.php print out the values a user has submitted in form.
     </p>
+
+<!-- <?php
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $favcolor = $_POST['favcolor'];
+        
+        echo $name . "<br/>";
+        echo $age . "<br/>";
+        echo $favcolor . "<br/>";
+
+    if(!empty($_POST['name']) && !empty($_POST['age']) && !empty($_POST['favcolor'])){
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $favcolor = $_POST['favcolor'];
+
+        echo $name . "<br/>";
+        echo $age . "<br/>";
+        echo $favcolor . "<br/>";
+
+        // $sql = "INSERT INTO `inquiry` ('name', 'age', 'favecolor') VALUES (?,?,?);";
+
+    }else{
+        echo "missing a field";
+    }
+
+    ?> -->
     <p>
         IMPORTANT: Make sure there is actually data being passed in before you attempt to print it.
         You can verify this by copying your URL to your process.php, and opening a new browser window and pasting
@@ -213,6 +283,7 @@
         Be sure to save the SQL adminer generated when inserted somewhere as this can be used in the later
         steps.
     </p>
+    <!-- Just create a table, then use the sql command and put it in process.php under $sql -->
     <h4>PHPandMysql Ex2</h4>
 
         
@@ -230,6 +301,28 @@
         December 11th at I believe 7:00. Details coming soon.
     </p>
         
+    <!-- // Connect to your database.. would be easier just to use dbcon.php (hint include)
+    include("../../dbConn.php");
+
+    // SANITIZE THE variable before bind
+    $name = sanitize($name);
+    $age = sanitize($age);
+    $favcolor = sanitize($favcolor);
+
+    // Make your prepared statement object
+    $stmt = $conn->prepare($sql);
+
+    // Bind parameter
+    $stmt->bind_param("sis",$name,$age,$favcolor);
+
+    // execute
+    $stmt->execute();
+
+    // give them a message: your name has been inserted. give them a link to got to page that shows inquiries(shownames.php)
+    echo "Name Stored. <a href='shownames.php'>View All Submitted Names</a>";
+    
+    // in the next excercise we will display exixsting inquiries -->
+
     <h4>PHPandMysql Ex2</h4>
     <p>Create a new php page called shownames.php. Using php and mysql print all of the previously submitted names, and their favorite color. Try to make 
         it asthetically pleasing.
@@ -242,7 +335,28 @@
         Challenge: display the comments in order of last submitted on top. We didn't save a date submitted, but this can still be done.
         Hint: adminer can help us generate this query
     </p>
+    <!-- <?php
+    // Listed all names submitted!!
 
+    // Connect to db(hint db conn)
+    include("../../dbConn.php");
+
+    // Got to adminer and get the query that get all the names (hint select)
+    $sql = "SELECT * FROM `inquiry2` ORDER BY `id` LIMIT 50";
+    // query tge database ( no need for the prepared statements here)
+    $results = $conn->query($sql);
+
+    // use loop to go through the results
+    while($row = $results->fetch_assoc()  ){
+        // print each result
+        echo $row['name'] . " age: " . $row['age'] . " favcolor: " . $row['favcolor'] . "<hr/>";
+
+        $data[] = $row;
+
+    }
+
+    var_dump($data)
+    ?> -->
     <h4>Other things to practice</h4>
     <ul>
         <li>PHP includes. The practical won't be massive so we won't see many benefits from making it modular, but

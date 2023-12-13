@@ -20,7 +20,7 @@ body{
 /* Making columns 2x2 have to google this bit
 Citation
 https://stackoverflow.com/questions/55174404/how-to-make-2x2-image-grid-css*/
-.boxes{
+#boxes{
     display: inline-grid;
     grid-template-columns: repeat(2, [col-start] 1fr);
     grid-gap: 10px;

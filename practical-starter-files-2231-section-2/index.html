@@ -39,10 +39,11 @@
                 </li>
             </ul>
         </nav>
-        <form method="post" action="process.php" onsubmit="return validate()">
-            Name: <input type="text" name="name" id="name"/> <br/>
+        <form method="post">
             Rating from 0 to 10: <input type="text" name="rating" id="rating" min="1" max="10"/> <br/>
-            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+        <textarea>
+            Leave a comment
+        </textarea>        
         <br>
         <input type="submit" value="Submit">
     </form>

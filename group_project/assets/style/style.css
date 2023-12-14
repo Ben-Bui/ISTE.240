@@ -1,0 +1,409 @@
+/* CSS File
+ Name: style.css
+ Created by: Alex Vasilcoiu
+ Date: 12/13/2023
+ */
+
+/*Header CSS*/
+html{
+     background-color: #6f5e53;
+     background-image: url("../images/brushed-alum.png");
+     font-family: "Times New Roman", Times, serif;
+}
+
+.mag{
+  font-style: normal;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    background-color: #ab947e ;
+    margin:0;
+    top:0;
+    left:0;
+    right:0;
+    padding:30px;
+    background-image: url("../images/checkered-light-emboss.png");
+
+  }
+
+h2{
+  text-align: center;
+  text-decoration: underline overline;
+  font-size: 40px;
+  margin-bottom: 5%;
+  
+}
+
+
+.letter {
+    background: #fafafa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3), 0 0 300px 25px rgba(222,198,122,0.7) inset;
+    height: 80%;
+    width:80%;
+    margin: 5%;
+    padding: 24px;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+
+.letter:before, .letter:after {
+    content: "";
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2), inset 0 0 300px rgba(222,198,122,0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    transition: .5s;
+}
+
+.letter:before {
+    left: -5px;
+    top: 2px;  
+    transform: rotate(-1.5deg);
+}
+
+.letter:after {
+    right: -3px;
+    top: 0px;
+    transform: rotate(2.4deg);
+}
+
+.letter:hover:before {
+transform: rotate(0deg);
+border: solid rgba(111,99,61,0.4);
+border-width: 0px 0px 0px 1px;
+left: -6px;
+top: -6px; 
+}
+
+.letter:hover:after {
+transform: rotate(0deg);
+border: solid rgba(111,99,61,0.4);
+border-width: 0px 0px 0px 1px;
+right: 3px;
+top: -3px;
+}
+
+footer{
+  bottom:0;
+  position: fixed;
+  display: block;
+  margin:0;
+  width:100%;
+  padding: 0;
+  background-color: #593d3b;
+  text-align: center;
+}
+
+/*section{
+    text-align: center;
+    background-color: white;
+    background-image: url("../images/clean-gray-paper.png");
+    padding:20px;
+    margin-top:0;
+    margin-left:50px;
+    margin-right:50px;
+}*/
+.navbar{
+    display: block;
+    background-color:#593d3b;
+    margin:0;
+    padding:20px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.curPage{
+    float: right;
+    text-decoration: underline;
+    display: absolute;
+}
+
+.overlay {
+        /*makes a curtain drop down menu*/   
+        height: 100%;
+        width: 0;
+        position: fixed; 
+        z-index: 2; 
+        left: 0;
+        top: 0;
+        background-color: rgb(0,0,0); /* Black fallback color */
+        background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+      }
+      
+      /* Position the content inside the overlay */
+      .overlay-content {
+        position: relative;
+        top: 25%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+      }
+      
+      /* The navigation links inside the overlay */
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block; /* Display block instead of inline */
+        transition: 0.3s; /* Transition effects on hover (color) */
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      /* Position the close button (top right corner) */
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      .dropdown-btn {
+          padding: 8px;
+        text-decoration: none;
+        font-size: 34px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+      
+        cursor: pointer;
+        outline: none;
+      }
+      
+      .dropdown-btn:hover {
+        color: #f1f1f1;
+      }
+      
+      .dropdown-container {
+        display: none;
+        background-color: #262626;
+        padding-left: 8px;
+      
+      }
+
+      /*Timeline CSS for history.php */
+      
+      .timeline {
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 15px ;
+      }
+      
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background: black;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+        z-index: 0;
+      }
+      
+      .containerT {
+        padding: 15px 20px 0px;
+        position: relative;
+        background: inherit;
+        width: 40%;
+      }
+      
+      .containerT.left {
+        left: 80px;
+      }
+      
+      .containerT.right {
+        left:50%;
+      }
+      
+      .containerT::after {
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: calc(50% - 8px);
+        right: -8px;
+        background: #ffffff;
+        border: 2px solid;
+        border-radius: 16px;
+        z-index: 1;
+      }
+      
+      .containerT.right::after {
+        left: -8px;
+      }
+      
+      .containerT::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 2px;
+        top: calc(50% - 1px);
+        right: 8px;
+        background: black;
+        z-index: 1;
+      }
+      
+      .containerT.right::before {
+        left: 8px;
+      }
+      
+      .containerT .date, .long-date {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 8px);
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 1;
+      }
+      
+      .containerT.left .date {
+        right: -75px;
+      }
+      
+      .containerT.right .date {
+        left: -75px;
+      }
+
+      .containerT.right .long-date {
+        left: -100px;
+      }
+      
+      .containerT.left .icon {
+        right: 56px;
+      }
+      
+      .containerT.right .icon {
+        left: 56px;
+      }
+      
+      .containerT .content {
+        padding: 30px 90px 30px 30px;
+        background: #6f5e53;
+        position: relative;
+        border-radius: 500px 500px 500px 500px;
+      }
+      
+      .containerT.right .content {
+        padding: 90px 90px 90px 90px;
+        border-radius: 500px 500px 500px 500px;
+      }
+      
+      .containerT .content h2 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        text-align: left;
+        font-weight: normal;
+        color: #ffffff;
+        text-decoration: underline overline;
+      }
+
+      .containerT.left .content h2 {
+        padding-left: 15%;
+      }
+      
+      
+      
+      .containerT .content p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #d6cfaf;
+        padding-left: 10%;
+      }
+      .containerT.left .content p {
+        padding-left: 20%;
+      }
+      
+      @media (max-width: 1460px) {
+        .timeline::after {
+          left: 105px;
+        }
+        .containerT.left .content h2 {
+          padding-left: 0;
+        }
+
+        .containerT.left .content p {
+          padding-left: 5%;
+        }
+      
+        .containerT {
+          width: 80%;
+          padding-left: 120px;
+          padding-right: 30px;
+        }
+      
+        .containerT.right {
+          left: 0%;
+        }
+        .containerT.left{
+          left:0%;
+        }
+      
+        .containerT.left::after, 
+        .containerT.right::after {
+          left: 82px;
+        }
+      
+        .containerT.left::before,
+        .containerT.right::before {
+          left: 100px;
+          border-color: transparent black transparent transparent;
+        }
+      
+        .containerT.left .date,
+        .containerT.right .date {
+          right: auto;
+          left: 10px;
+          
+        }
+      
+        .containerT.left .icon,
+        .containerT.right .icon {
+          right: auto;
+          left: 146px;
+        }
+      
+        .containerT.left .content,
+        .containerT.right .content {
+          padding: 125px 100px 100px 90px;
+          border-radius: 500px 500px 500px 500px;
+        }
+      }
+     
+      
+      /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 767px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+    }
+}

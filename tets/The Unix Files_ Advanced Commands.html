@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://solace.ist.rit.edu/~iste240t05/advanced.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://solace.ist.rit.edu/~iste240t05/assets/style/style.css">
+    <link rel="javascript" href="https://solace.ist.rit.edu/~iste240t05/assets/script/script.js">
+    <link rel="icon" type="image/x-icon" href="https://solace.ist.rit.edu/~iste240t05/assets/images/penguin.ico">
+    <title>The Unix Files: Advanced Commands</title>
+</head>
+<body>
+<script>
+    function dropDowndisplay(id) {
+    var dropdownContent = document.getElementById(id).nextElementSibling;
+    console.log(dropdownContent);
+    
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+}
+
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+    <h1>The Unix Files <span class="mag">🔎︎</span></h1>
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="https://solace.ist.rit.edu/~iste240t05/index.php">Homepage</a>
+      <button class="dropdown-btn" id="dropdown-btn" onclick="dropDowndisplay(&#39;dropdown-btn&#39;)">Start Unix ▾
+      </button>
+      <div class="dropdown-container" id="dropdown-container">
+        <a href="https://solace.ist.rit.edu/~iste240t05/whylearn.php">Why Learn Unix?</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/beginners.php">Unix for Beginners</a>
+		<a href="https://solace.ist.rit.edu/~iste240t05/basic.php">Basic Commands List</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/advanced.php">Advanced Commands List</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/history.php">History of Unix</a>
+      </div>
+      <button class="dropdown-btn" id="dropdown-btn1" onclick="dropDowndisplay(&#39;dropdown-btn1&#39;)">Tutorials ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/videos.php">Videos</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/written.php">Written</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/stepbystep.php">Step-by-Step</a>
+    </div>
+      <button class="dropdown-btn" id="dropdown-btn2" onclick="dropDowndisplay(&#39;dropdown-btn2&#39;)">Exercises ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/quiz.php">Quiz</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/otherexer.php">Other Exercises</a>
+    </div>
+    <button class="dropdown-btn" id="dropdown-btn3" onclick="dropDowndisplay(&#39;dropdown-btn3&#39;)">About Us ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/who.php">Who are We?</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/contact.php">Contact Us</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/review.php">Reviews/Comments</a>
+    </div>
+    
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span class="navbar">
+    <span onclick="openNav()">☰</span>
+    <span class="curPage">
+        Advanced Commands    </span>
+</span>
+<div class="letter">
+<h2>Advanced Commands List:</h2>
+	<p>Click the drop downs for more information!</p>
+	<p class="command" id="com1"><b><u>grep</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com1drop&#39;,&#39;comTab1&#39;)" class="drop" id="com1drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab1">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">grep: filters data based off pattern</td>
+			<td class="tableBody">-c, -h, -i, -l, n, etc.</td>
+			<td class="tableBody">grep [options] pattern [files]</td>
+			<td class="tableBody">grep -c "test" test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com2"><b><u>ssh</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com2drop&#39;,&#39;comTab2&#39;)" class="drop" id="com2drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab2">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">ssh: remotely connects to a host</td>
+			<td class="tableBody">No Flags</td>
+			<td class="tableBody">ssh [username]@ [hostname/IP]</td>
+			<td class="tableBody">ssh LinSer01 @lja5415 .com</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com3"><b><u>awk</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com3drop&#39;,&#39;comTab3&#39;)" class="drop" id="com3drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab3">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">awk: Tons of function, primarily file search</td>
+			<td class="tableBody">-f, -F</td>
+			<td class="tableBody">awk [options] 'selection criteria' input_file &gt; output_file</td>
+			<td class="tableBody">awk '{print $1,$4}' test.txt &gt; test_output.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com4"><b><u>sed</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com4drop&#39;,&#39;comTab4&#39;)" class="drop" id="com4drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab4">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">sed: stream editor for a file</td>
+			<td class="tableBody">-i, -n, -e, etc.</td>
+			<td class="tableBody">sed [options] [script] [inputfile]</td>
+			<td class="tableBody">sed '3 s/test/ test_swap/' test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com5"><b><u>tcpdump</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com5drop&#39;,&#39;comTab5&#39;)" class="drop" id="com5drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab5">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">tcpdump: Packet analyzer in terminal</td>
+			<td class="tableBody">-i, -c, -A, -D, etc.</td>
+			<td class="tableBody">tcpdump [options]</td>
+			<td class="tableBody">tcpdump -w packets.pcap ens192</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com6"><b><u>netstat</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com6drop&#39;,&#39;comTab6&#39;)" class="drop" id="com6drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab6">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">netstat: Troubleshooting and configuring network connections</td>
+			<td class="tableBody">-a, -at, -au, -l, etc.</td>
+			<td class="tableBody">netstat [options]</td>
+			<td class="tableBody">netstat -a</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com7"><b><u>nslookup</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com7drop&#39;,&#39;comTab7&#39;)" class="drop" id="com7drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab7">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">nslookup: Lookup for dns server information</td>
+			<td class="tableBody">-domain, -debug, -type, -port, etc.</td>
+			<td class="tableBody">nslookup [options] [hosts]</td>
+			<td class="tableBody">nslookup google.com</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com8"><b><u>traceroute</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com8drop&#39;,&#39;comTab8&#39;)" class="drop" id="com8drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab8">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">traceroute: Traces route which a packet takes to a destination</td>
+			<td class="tableBody">-4, -6, -F, -g, -m, etc.</td>
+			<td class="tableBody">traceroute [options] host_address [pathlength]</td>
+			<td class="tableBody">traceroute -4 google.com</td>
+		</tr>
+	</tbody></table>
+</div>
+<br>
+
+<script>
+	function commandDropDown(ele1, ele2){
+		if(document.getElementById(ele1).innerHTML == "&nbsp;V&nbsp;"){
+			document.getElementById(ele1).innerHTML = "&nbsp;^&nbsp;";
+			document.getElementById(ele2).style.display = "block";
+		} else {
+			document.getElementById(ele1).innerHTML = "&nbsp;V&nbsp;";
+			document.getElementById(ele2).style.display = "none";
+		}
+	}
+</script>
+
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h6>About</h6>
+            <p class="text-justify">We are a dedicated group of students passionate about Unix and its command-line environment. Each member brings unique skills and expertise to the table, collectively aiming to create a survival guide for Unix users of all levels. Stay tuned as we work together to deliver valuable content and resources to help you navigate the world of Unix efficiently!</p>
+          </div>
+
+        <br>
+
+        <h6>Our Pages</h6>
+          <div class="linksFooter">
+            
+            <ul class="footer-links">
+            
+            <li><a href="https://solace.ist.rit.edu/~iste240t05/index.php">Homepage</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/whylearn.php">Why Learn Unix?</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/beginners.php">Unix for Beginners</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/basic.php">Basic Command List</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/advanced.php">Advanced Command List</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/history.php">History of Unix</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/videos.php">Videos</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/written.php">Written</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/stepbystep.php">Step by Step</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/quiz.php">Quiz</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/otherexer.php">Other Exercises</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/who.php">Who are we?</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/contact.php">Contact Us</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/review.php">Reviews/Comments</a></li>
+            </ul>
+          </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright © 2023 All Rights Reserved by 
+         <a href="https://solace.ist.rit.edu/~iste240t05/index.php">Raisin Bran.</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</div></footer>
+</body></html>

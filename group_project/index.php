@@ -7,17 +7,21 @@ include($path . "assets/inc/header.php");
 ?>
 
 <div class="letter">
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem dolor, blandit vel nisi quis, finibus sollicitudin leo. Curabitur vestibulum augue eu libero suscipit semper. Duis congue elementum justo, sit amet hendrerit nisl pretium ut. Donec sodales condimentum facilisis. Nunc in odio ut nisl convallis euismod molestie vel libero. Pellentesque quis nisi varius tortor tincidunt semper. Ut sagittis a odio quis sagittis. Duis a dictum velit. In hac habitasse platea dictumst. Pellentesque feugiat purus sed est tincidunt tincidunt.<br/>
-
-Vestibulum pretium mi sit amet leo facilisis, nec consectetur libero finibus. Proin in bibendum nunc. Curabitur ut facilisis massa, quis interdum lorem. Aliquam a dui euismod, tincidunt mauris lacinia, maximus lectus. Vivamus sit amet nunc eget nulla scelerisque dapibus. Suspendisse dui metus, consequat a sollicitudin non, posuere ut elit. Duis est urna, sagittis pulvinar lacinia vel, sodales et ante. Nullam felis metus, tempor vel mauris et, fringilla interdum erat. Sed rutrum vehicula quam, nec feugiat urna fermentum sit amet. Pellentesque odio ante, tempus vel arcu non, imperdiet imperdiet sem. Quisque consequat malesuada vestibulum.<br/>
-
-Pellentesque laoreet maximus auctor. Cras at hendrerit nunc. Aenean ut cursus enim, vel posuere nulla. Sed malesuada euismod magna, eu rutrum libero efficitur sit amet. Proin bibendum elit a arcu molestie mollis. Praesent in scelerisque leo. Nullam efficitur lacus quis lorem pharetra tempus et non justo. Sed eget malesuada libero.<br/>
-
-In eget auctor urna. In aliquet ante tortor, eu convallis magna scelerisque sed. Donec sollicitudin egestas metus id eleifend. Maecenas quis tempor eros, non convallis felis. Phasellus ultricies augue at turpis suscipit, dapibus semper mi dictum. Curabitur tempus sit amet eros in pulvinar. Donec gravida at nunc ut sollicitudin. Quisque odio velit, gravida in purus dapibus, lobortis posuere risus. Donec ut est ut turpis luctus ultrices.<br/>
-
-Nulla purus leo, imperdiet in nisl a, mattis pellentesque turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet leo, eu tincidunt magna. Ut bibendum diam nibh, eu bibendum justo ultricies id. Nam iaculis leo nulla, nec volutpat tortor ullamcorper non. Donec dapibus nisi tristique sem aliquam, consequat semper metus auctor. In hac habitasse platea dictumst. Donec vitae velit convallis, eleifend arcu vel, consequat erat. Ut condimentum sapien non est semper, ut sagittis velit malesuada. Ut vulputate imperdiet massa eget bibendum. Proin dictum sapien ac augue ultrices, in hendrerit magna vulputate. Nam dictum turpis sit amet mauris auctor malesuada.<br/>
-</p>
+	<h2>Welcome to Unix Files!</h2>
+	<div id="homeContainer">
+		<div class="homeItem"><p id="welcomeText">If you are here you must be interested in learning about Unix!
+		 Everyone on the team would like to extend our warmest welcomes to you!
+		 After reading through this homepage please use the navigation bar on the left of your page to redirect yourself to whatever page seems of interest to you!
+		 <br/>Explore why you should and want to learn unix under our 'start unix' section! We have a variety of pages to give you information about whatever you desire.
+		 <br/>Discover our tutorials tab where we cover topics about everything a beginner and intermediate needs to know, as well as step-by-step tutorials!
+		 <br/>Once you're done reading test your knowledge under our exercise tab! Can you answer all of detective pengi's questions correctly? If not get yourself to reading!
+		 <br/>If you have any questions or want to get in contact with a support agent please navigate to the "About Us" section where we can better assist your needs.
+		 <br/>Again, we extend our warmest welcomes and hope you enjoy your investigation through the unix files!
+		 </p></div>
+		<div class="homeItem"><img src="assets/images/logo-open-square.png" class="penguinOpen" onmouseover="this.src='assets/images/logo-close-square.png';"onmouseout="this.src='assets/images/logo-open-square.png'"></div>
+	</div>
+	<p id="homeCaption"><i><u>Hover of Detective Pengi for a surprise!</u></i></p>
+	
 </div>
 
 <?php

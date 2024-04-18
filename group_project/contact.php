@@ -7,17 +7,33 @@ include($path . "assets/inc/header.php");
 ?>
 
 <div class="letter">
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem dolor, blandit vel nisi quis, finibus sollicitudin leo. Curabitur vestibulum augue eu libero suscipit semper. Duis congue elementum justo, sit amet hendrerit nisl pretium ut. Donec sodales condimentum facilisis. Nunc in odio ut nisl convallis euismod molestie vel libero. Pellentesque quis nisi varius tortor tincidunt semper. Ut sagittis a odio quis sagittis. Duis a dictum velit. In hac habitasse platea dictumst. Pellentesque feugiat purus sed est tincidunt tincidunt.<br/>
+    <body>
 
-Vestibulum pretium mi sit amet leo facilisis, nec consectetur libero finibus. Proin in bibendum nunc. Curabitur ut facilisis massa, quis interdum lorem. Aliquam a dui euismod, tincidunt mauris lacinia, maximus lectus. Vivamus sit amet nunc eget nulla scelerisque dapibus. Suspendisse dui metus, consequat a sollicitudin non, posuere ut elit. Duis est urna, sagittis pulvinar lacinia vel, sodales et ante. Nullam felis metus, tempor vel mauris et, fringilla interdum erat. Sed rutrum vehicula quam, nec feugiat urna fermentum sit amet. Pellentesque odio ante, tempus vel arcu non, imperdiet imperdiet sem. Quisque consequat malesuada vestibulum.<br/>
+        <div class="heading"><h2>Contact Us</h2></div>
 
-Pellentesque laoreet maximus auctor. Cras at hendrerit nunc. Aenean ut cursus enim, vel posuere nulla. Sed malesuada euismod magna, eu rutrum libero efficitur sit amet. Proin bibendum elit a arcu molestie mollis. Praesent in scelerisque leo. Nullam efficitur lacus quis lorem pharetra tempus et non justo. Sed eget malesuada libero.<br/>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.935627775462!2d-77.67411042402928!3d43.08484867113477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d14c603a147e55%3A0xbe7eb31ed5e22c03!2sRochester%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1702539795418!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 
-In eget auctor urna. In aliquet ante tortor, eu convallis magna scelerisque sed. Donec sollicitudin egestas metus id eleifend. Maecenas quis tempor eros, non convallis felis. Phasellus ultricies augue at turpis suscipit, dapibus semper mi dictum. Curabitur tempus sit amet eros in pulvinar. Donec gravida at nunc ut sollicitudin. Quisque odio velit, gravida in purus dapibus, lobortis posuere risus. Donec ut est ut turpis luctus ultrices.<br/>
+        <div class="address">
+            <p>1 Lomb Memorial Dr, Rochester, NY 14623</p>
+            <div class="rit"><img class="rit" src="assets/images/address.jpg" alt="Golisano"></div>
+        </div>
 
-Nulla purus leo, imperdiet in nisl a, mattis pellentesque turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet leo, eu tincidunt magna. Ut bibendum diam nibh, eu bibendum justo ultricies id. Nam iaculis leo nulla, nec volutpat tortor ullamcorper non. Donec dapibus nisi tristique sem aliquam, consequat semper metus auctor. In hac habitasse platea dictumst. Donec vitae velit convallis, eleifend arcu vel, consequat erat. Ut condimentum sapien non est semper, ut sagittis velit malesuada. Ut vulputate imperdiet massa eget bibendum. Proin dictum sapien ac augue ultrices, in hendrerit magna vulputate. Nam dictum turpis sit amet mauris auctor malesuada.<br/>
-</p>
+        <div class="email">
+            <p>
+                You can email us at:<br><br>
+                Lewis Atkinson:lja5415@rit.edu<br><br>
+                Ben Bui:btb4516@rit.edu<br><br>
+                Colin Hutton:cmh5250@rit.edu<br><br>
+                Logan Shaw:lfs1580@rit.edu<br><br>
+                Alex Vasilcoiu:aav9060@rit.edu
+
+            </p>
+        </div>
+
+        <div class="extra"><p>You can also contact us by calling 1 379-820-2985</p></div>
+
+
+    </body>
 </div>
 
 <?php

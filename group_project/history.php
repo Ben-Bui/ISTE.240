@@ -47,7 +47,7 @@ include($path . "assets/inc/header.php");
     <div class="content">
       <h2>Sixth Edition of Unix is Released</h2>
       <p>
-        Unix finally leaves Bell Labs. It's the first edition that becomes widely available to the public, and it becomes the first BSD (Berkley Software Distribution). What is the BSD? It's a group of Unix-like operating systems who's orgins in early versions of it are from Research Unix (this edition of Unix).
+        Unix finally leaves Bell Labs. It's the first edition that becomes widely available to the public, and it becomes the first BSD (Berkley Software Distribution). What is the BSD? It's a group of Unix-like operating systems who's orgins in early versions of it are from Research Unix (this edition of Unix). AT&T also helped make Unix as available 
       </p>
     </div>
   </div>
@@ -75,7 +75,25 @@ include($path . "assets/inc/header.php");
 
 <br/><br/>When efforts failed to bring the two groups together, each group brought out its own version of an "open" UNIX.""
 
-<br/><br/>-(2002, Nokia Bell Labs)
+<br/><br/>-(2002, Nokia Bell Labs)</p>
+    </div>
+  </div>
+  <div class="containerT left">
+    <div class="long-date">September 1991</div>
+    <i class="icon fa fa-cog"></i>
+    <div class="content">
+      <h2>Linix is Created</h2>
+      <p>
+      Linus released the first version of his Linux called Linux 0.01. It was a command-line operating system and was freely distributed on the Internet.      </p>
+    </div>
+  </div>
+  <div class="containerT right">
+    <div class="date">2019</div>
+    <i class="icon fa fa-certificate"></i>
+    <div class="content">
+      <h2>Unix's 50th Anniversay!</h2>
+      <p> Nothing super special happened in 2019 regarding Unix, but it's a cool fun fact!
+      </p>
     </div>
   </div>
 </div>

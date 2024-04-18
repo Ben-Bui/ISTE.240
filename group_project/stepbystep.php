@@ -1,23 +1,92 @@
 <?php 
 
 $path = "./";
-$curPage = "Step-by=Step";
+$curPage = "Step-by-Step";
 
 include($path . "assets/inc/header.php");
+
+//NOTE TO SCALE IMAGES SO PAGE IS RESPONSIVE
 ?>
 
 <div class="letter">
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sem dolor, blandit vel nisi quis, finibus sollicitudin leo. Curabitur vestibulum augue eu libero suscipit semper. Duis congue elementum justo, sit amet hendrerit nisl pretium ut. Donec sodales condimentum facilisis. Nunc in odio ut nisl convallis euismod molestie vel libero. Pellentesque quis nisi varius tortor tincidunt semper. Ut sagittis a odio quis sagittis. Duis a dictum velit. In hac habitasse platea dictumst. Pellentesque feugiat purus sed est tincidunt tincidunt.<br/>
+    <div class="stepList">
+        <h2>CD Command</h2>
+        <div class="paragraphImage">
+            <p>
+                The 'cd' command is used to move into a directory within your files, for example, 'cd [document/webAndMobile]' would take you to a web and mobile folder in your documents if
+                it existed on your computer. To assist in finding the files you want to access, you can use the 'ls' command to display directories in your current
+                file location, and the 'pwd' command to view your current directory if needed.
+            </p>
+            <img src="<?php $path ?>assets/images/cd.png" alt="an image of using the 'ls' and 'pwd' commands">
+        </div>
+        <div class="paragraphImage">
+            <p>
+                An important note is that cd will move you according to your current location in the files, if you wish to navigate to 'home/user/documents/webAndMobile',
+                but are currently in 'home/user/documents/dataBases' you will have to move back before you can navigate to the webAndMobile folder. <br><br>
+                These following commands will help you move backwards through directories to navigate your files:<br>
+                Using 'cd /' will return you to the root directory.<br>
+            </p>
+                <img src="<?php $path ?>assets/images/root.png" alt="an image of using 'cd /' to return to the root directory">
+            <p>
+                Using 'cd ~' will return you to the home directory.
+            </p>
+            <img src="<?php $path ?>assets/images/cdhome.png" alt="an image of using 'cd ~' to return to the home directory">
+            <p>
+                Using 'cd ..' will move you backwards by a single level from the current directory.
+            </p>
+            <img src="<?php $path ?>assets/images/cdback.png" alt="an image of using 'cd ..' to move one level up in the directory">
+        </div>
+    </div>
+    <div class="stepList">
+        <h2>Cat Command</h2>
+        <div class="paragraphImage">
+            <p>
+               The 'cat' command is very frequently used on linux. It can be used to view, create, and edit files.<br><br>
+               To view files, you use the cat command followed with the name of the file you wish to view. Ex 'cat fileName.txt'
+            </p>
+            <img src="<?php $path ?>assets/images/cat.png" alt="an image of using 'cat fileName.txt' to view the contents of a file">
+        </div>
+        <div class="paragraphImage">
+            <p>
+               To display the contents of mutliple files, you can use the cat command with both filenames, separated by a comma. Ex: 'cat fileName1.txt, fileName2.txt'
+            </p>
+            <img src="<?php $path ?>assets/images/cat2.png" alt="an image of using 'cat fileName.txt' to view the contents of a file">
+        </div>
+        <div class="paragraphImage">
+            <p>
+               The cat command can also be used to create new files, which is done by using the '>' flag before the name of the new file, then hitting enter 
+               will allow you to type text that the file will contain. To save the file, press CRTL + D. Ex:'cat > jayesh1.txt'
+            </p>
+            <img src="<?php $path ?>assets/images/catNew.png" alt="an image of using 'cat >' to create a new file">
+        </div>
+        <div class="paragraphImage">
+            <p>
+               Cat also allows you to append contents of one file onto another file by using first the name of the file you want to add onto another, 
+               then the '>>' flag, followed by the second file that will have the information appended to. Ex: 'cat appendFrom.txt >> appendTo.txt'
+            </p>
+            <img src="<?php $path ?>assets/images/catAppend.png" alt="an image of using 'cat >>' to append information from one file to another">
+        </div>
+    </div>
 
-Vestibulum pretium mi sit amet leo facilisis, nec consectetur libero finibus. Proin in bibendum nunc. Curabitur ut facilisis massa, quis interdum lorem. Aliquam a dui euismod, tincidunt mauris lacinia, maximus lectus. Vivamus sit amet nunc eget nulla scelerisque dapibus. Suspendisse dui metus, consequat a sollicitudin non, posuere ut elit. Duis est urna, sagittis pulvinar lacinia vel, sodales et ante. Nullam felis metus, tempor vel mauris et, fringilla interdum erat. Sed rutrum vehicula quam, nec feugiat urna fermentum sit amet. Pellentesque odio ante, tempus vel arcu non, imperdiet imperdiet sem. Quisque consequat malesuada vestibulum.<br/>
+    <div class="stepList">
+        <h2>MV Command</h2>
+        <div class="paragraphImage">
+            <p>
+               The 'mv', or move command has two main functions, renaming a file or directory, and moving a file or directory.<br><br>
+               To rename a file, you would use mv followed by the current file name, then the new file name. Ex: 'mv oldName.txt newName.txt'
+            </p>
+            <img src="<?php $path ?>assets/images/mvrename.png" alt="an image of using the 'mv' command to rename a file">
+        </div>
+        <div class="paragraphImage">
+            <p>
+               To move a file, you would use mv, then the file name, followed by the new destination path of the file. Ex: 'mv file.txt /home/documents/webAndMobile/'
+            </p>
+            <img src="<?php $path ?>assets/images/mvmove.png" alt="an image of using the 'mv' command to move a file">
+        </div>
 
-Pellentesque laoreet maximus auctor. Cras at hendrerit nunc. Aenean ut cursus enim, vel posuere nulla. Sed malesuada euismod magna, eu rutrum libero efficitur sit amet. Proin bibendum elit a arcu molestie mollis. Praesent in scelerisque leo. Nullam efficitur lacus quis lorem pharetra tempus et non justo. Sed eget malesuada libero.<br/>
+    </div>
 
-In eget auctor urna. In aliquet ante tortor, eu convallis magna scelerisque sed. Donec sollicitudin egestas metus id eleifend. Maecenas quis tempor eros, non convallis felis. Phasellus ultricies augue at turpis suscipit, dapibus semper mi dictum. Curabitur tempus sit amet eros in pulvinar. Donec gravida at nunc ut sollicitudin. Quisque odio velit, gravida in purus dapibus, lobortis posuere risus. Donec ut est ut turpis luctus ultrices.<br/>
 
-Nulla purus leo, imperdiet in nisl a, mattis pellentesque turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed urna leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis aliquet leo, eu tincidunt magna. Ut bibendum diam nibh, eu bibendum justo ultricies id. Nam iaculis leo nulla, nec volutpat tortor ullamcorper non. Donec dapibus nisi tristique sem aliquam, consequat semper metus auctor. In hac habitasse platea dictumst. Donec vitae velit convallis, eleifend arcu vel, consequat erat. Ut condimentum sapien non est semper, ut sagittis velit malesuada. Ut vulputate imperdiet massa eget bibendum. Proin dictum sapien ac augue ultrices, in hendrerit magna vulputate. Nam dictum turpis sit amet mauris auctor malesuada.<br/>
-</p>
 </div>
 
 <?php

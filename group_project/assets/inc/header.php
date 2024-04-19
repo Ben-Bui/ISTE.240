@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/style.css">
     <link rel="javascript" href="./assets/script/script.js">
+    <link rel="icon" type="image/x-icon" href="./assets/images/penguin.ico">
     <title>The Unix Files: <?php echo $curPage?></title>
 </head>
-
+<body>
 <script>
     function dropDowndisplay(id) {
     var dropdownContent = document.getElementById(id).nextElementSibling;
@@ -36,7 +37,6 @@ function closeNav() {
 }
 </script>
 
-<body>
     <h1>The Unix Files <span class="mag">&#x1F50E;&#xFE0E;</span></h1>
     <!-- The overlay -->
 <div id="myNav" class="overlay">
@@ -52,6 +52,7 @@ function closeNav() {
       <div class="dropdown-container" id="dropdown-container">
         <a href="whylearn.php">Why Learn Unix?</a>
         <a href="beginners.php">Unix for Beginners</a>
+		<a href="basic.php">Basic Commands List</a>
         <a href="advanced.php">Advanced Commands List</a>
         <a href="history.php">History of Unix</a>
       </div>
@@ -61,7 +62,6 @@ function closeNav() {
       <a href="videos.php">Videos</a>
       <a href="written.php">Written</a>
       <a href="stepbystep.php">Step-by-Step</a>
-      <a href="othersource.php">Other Sources</a>
     </div>
       <button class="dropdown-btn" id="dropdown-btn2" onclick="dropDowndisplay('dropdown-btn2')" >Exercises ▾
     </button>

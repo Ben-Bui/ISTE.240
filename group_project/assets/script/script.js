@@ -26,4 +26,8 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e942a1eacb318b13a335dce20c73c77228297a5e

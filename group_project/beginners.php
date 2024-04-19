@@ -11,7 +11,11 @@ include($path . "assets/inc/header.php");
 
         <div class="title1"><h2>A Noobs Guide To UNIX</h2></div>
 
+<<<<<<< HEAD
         <div class="illustration1"><img src="survival.jpg" alt="Survival Guide"></div>
+=======
+        <div class="illustration1"><img src="assets/images/survival.jpg" alt="Survival Guide"></div>
+>>>>>>> e942a1eacb318b13a335dce20c73c77228297a5e
 
         <div class="intro">
             <p>Welcome to the world of UNIX,
@@ -37,8 +41,11 @@ include($path . "assets/inc/header.php");
 
         <div class="title2"><h2>A Deeper Look into UNIX</h2></div>
 
+<<<<<<< HEAD
         <div class="description"><p> </p></div>
 
+=======
+>>>>>>> e942a1eacb318b13a335dce20c73c77228297a5e
         <div class="work">
             <p>
                 UNIX is an operating system that was developed in
@@ -73,6 +80,7 @@ include($path . "assets/inc/header.php");
             </ul>
         </div>
 
+<<<<<<< HEAD
         <div class="illustration2"><img src="navigation.jpg" alt="Navigating UNIX"></div>
 
         <div class="end"><p>
@@ -100,6 +108,28 @@ include($path . "assets/inc/header.php");
 
                 User management commands: adduser, passwd, usermod, and groupadd.
 
+=======
+        <div class="illustration2"><img src="assets/images/navigation.jpg" alt="Navigating UNIX"></div>
+
+        <div class="end"><p>
+        Permissions and Ownership:<br><br>
+
+                Learn about file permissions with commands like chmod, chown, and chgrp.
+                Use ls -l to view detailed file information, including permissions and ownership.<br><br>
+               
+                Text Editors: Familiarize yourself with text editors like ‘nano’, ‘vim’, or ‘emacs’.<br><br>
+                
+                5. Package Management (Linux): Use package managers like ‘apt’, ‘yum’, or ‘pacman’ to install, update, and remove software.<br><br>
+                
+                Pipes and Redirection: Use | (pipe) to send the output of one command as input to another.
+                Use ‘ >’ or ‘’ >>’ to redirect output to a file.<br><br>
+                
+                Searching and Grep: Use ‘grep’ to search for specific text in files.<br><br>
+                
+                Processes: Manage processes with commands like ps, top, kill, and jobs.<br><br>
+                
+                Users and Groups: User management commands: adduser, passwd, usermod, and groupadd.
+>>>>>>> e942a1eacb318b13a335dce20c73c77228297a5e
             </p></div>
 
 

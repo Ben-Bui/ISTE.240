@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://solace.ist.rit.edu/~iste240t05/basic.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://solace.ist.rit.edu/~iste240t05/assets/style/style.css">
+    <link rel="javascript" href="https://solace.ist.rit.edu/~iste240t05/assets/script/script.js">
+    <link rel="icon" type="image/x-icon" href="https://solace.ist.rit.edu/~iste240t05/assets/images/penguin.ico">
+    <title>The Unix Files: Basic Commands</title>
+</head>
+<body>
+<script>
+    function dropDowndisplay(id) {
+    var dropdownContent = document.getElementById(id).nextElementSibling;
+    console.log(dropdownContent);
+    
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+}
+
+    /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+    <h1>The Unix Files <span class="mag">🔎︎</span></h1>
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="https://solace.ist.rit.edu/~iste240t05/index.php">Homepage</a>
+      <button class="dropdown-btn" id="dropdown-btn" onclick="dropDowndisplay(&#39;dropdown-btn&#39;)">Start Unix ▾
+      </button>
+      <div class="dropdown-container" id="dropdown-container">
+        <a href="https://solace.ist.rit.edu/~iste240t05/whylearn.php">Why Learn Unix?</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/beginners.php">Unix for Beginners</a>
+		<a href="https://solace.ist.rit.edu/~iste240t05/basic.php">Basic Commands List</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/advanced.php">Advanced Commands List</a>
+        <a href="https://solace.ist.rit.edu/~iste240t05/history.php">History of Unix</a>
+      </div>
+      <button class="dropdown-btn" id="dropdown-btn1" onclick="dropDowndisplay(&#39;dropdown-btn1&#39;)">Tutorials ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/videos.php">Videos</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/written.php">Written</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/stepbystep.php">Step-by-Step</a>
+    </div>
+      <button class="dropdown-btn" id="dropdown-btn2" onclick="dropDowndisplay(&#39;dropdown-btn2&#39;)">Exercises ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/quiz.php">Quiz</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/otherexer.php">Other Exercises</a>
+    </div>
+    <button class="dropdown-btn" id="dropdown-btn3" onclick="dropDowndisplay(&#39;dropdown-btn3&#39;)">About Us ▾
+    </button>
+    <div class="dropdown-container" id="dropdown-container">
+      <a href="https://solace.ist.rit.edu/~iste240t05/who.php">Who are We?</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/contact.php">Contact Us</a>
+      <a href="https://solace.ist.rit.edu/~iste240t05/review.php">Reviews/Comments</a>
+    </div>
+    
+    </div>
+  
+  </div>
+  
+  <!-- Use any element to open/show the overlay navigation menu -->
+  <span class="navbar">
+    <span onclick="openNav()">☰</span>
+    <span class="curPage">
+        Basic Commands    </span>
+</span>
+<div class="letter">
+	<h2>Basic Commands List:</h2>
+	<p>Click the drop downs for more information!</p>
+	<p class="command" id="com1"><b><u>ls</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com1drop&#39;,&#39;comTab1&#39;)" class="drop" id="com1drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab1">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">ls: lists directory contents</td>
+			<td class="tableBody">-a, -d, -l, -R, -X, etc.</td>
+			<td class="tableBody">ls [flags] [directory]</td>
+			<td class="tableBody">ls -la /testDirectory/ test </td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com2"><b><u>cd</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com2drop&#39;,&#39;comTab2&#39;)" class="drop" id="com2drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab2">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">cd: changes current directory</td>
+			<td class="tableBody">No Flags</td>
+			<td class="tableBody">cd [directory]</td>
+			<td class="tableBody">cd /home/student /Downloads</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com3"><b><u>cat</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com3drop&#39;,&#39;comTab3&#39;)" class="drop" id="com3drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab3">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">cat: shows contents of file</td>
+			<td class="tableBody">-A, -n, etc.</td>
+			<td class="tableBody">cat [flags] [file_path]</td>
+			<td class="tableBody">cat test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com4"><b><u>mv</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com4drop&#39;,&#39;comTab4&#39;)" class="drop" id="com4drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab4">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">mv: moves a file</td>
+			<td class="tableBody">-f, -u, -v, etc.</td>
+			<td class="tableBody">mv [flags] [start_file_path] [end_file_path]</td>
+			<td class="tableBody">mv test.txt /home/ student /Documents /Test/</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com5"><b><u>cp</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com5drop&#39;,&#39;comTab5&#39;)" class="drop" id="com5drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab5">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">cp: copies file</td>
+			<td class="tableBody">-r, -p, -i, -b, etc.</td>
+			<td class="tableBody">cp [start_file_path] [new_file_path]</td>
+			<td class="tableBody">cp test.txt student/ Documents /test/ copy_of_test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com6"><b><u>touch</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com6drop&#39;,&#39;comTab6&#39;)" class="drop" id="com6drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab6">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">touch: creates or edits a file</td>
+			<td class="tableBody">-r, -m, -d, -c, etc.</td>
+			<td class="tableBody">touch [flags] [file_path]</td>
+			<td class="tableBody">touch new_test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com7"><b><u>sudo</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com7drop&#39;,&#39;comTab7&#39;)" class="drop" id="com7drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab7">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">sudo: runs a command in superuser</td>
+			<td class="tableBody">-V, -h, -l, -k, -s, etc.</td>
+			<td class="tableBody">sudo [flags] [command]</td>
+			<td class="tableBody">sudo rm test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com8"><b><u>rm</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com8drop&#39;,&#39;comTab8&#39;)" class="drop" id="com8drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab8">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">rm: removes file</td>
+			<td class="tableBody">-i, -f, -r, etc.</td>
+			<td class="tableBody">rm [flags] [file]</td>
+			<td class="tableBody">rm test.txt</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com9"><b><u>clear</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com9drop&#39;,&#39;comTab9&#39;)" class="drop" id="com9drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab9">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">clear: clears the terminal window</td>
+			<td class="tableBody">-x</td>
+			<td class="tableBody">clear [options]</td>
+			<td class="tableBody">clear</td>
+		</tr>
+	</tbody></table>
+	<p class="command" id="com10"><b><u>man</u></b>&nbsp;&nbsp;
+    <button onclick="commandDropDown(&#39;com10drop&#39;,&#39;comTab10&#39;)" class="drop" id="com10drop">&nbsp;V&nbsp;</button></p>
+	<table class="commandTable" id="comTab10">
+		<tbody><tr>
+			<th class="tableHead">Command</th>
+			<th class="tableHead">Flags</th>
+			<th class="tableHead">Syntax</th>
+			<th class="tableHead">Example</th>
+		</tr>
+		<tr>
+			<td class="tableBody">man: opens up the manual page for a command</td>
+			<td class="tableBody">-k, -f, -S, etc.</td>
+			<td class="tableBody">man [options] [command]</td>
+			<td class="tableBody">man cat</td>
+		</tr>
+	</tbody></table>
+</div>
+<br>
+
+<script>
+	function commandDropDown(ele1, ele2){
+		if(document.getElementById(ele1).innerHTML == "&nbsp;V&nbsp;"){
+			document.getElementById(ele1).innerHTML = "&nbsp;^&nbsp;";
+			document.getElementById(ele2).style.display = "block";
+		} else {
+			document.getElementById(ele1).innerHTML = "&nbsp;V&nbsp;";
+			document.getElementById(ele2).style.display = "none";
+		}
+	}
+</script>
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h6>About</h6>
+            <p class="text-justify">We are a dedicated group of students passionate about Unix and its command-line environment. Each member brings unique skills and expertise to the table, collectively aiming to create a survival guide for Unix users of all levels. Stay tuned as we work together to deliver valuable content and resources to help you navigate the world of Unix efficiently!</p>
+          </div>
+
+        <br>
+
+        <h6>Our Pages</h6>
+          <div class="linksFooter">
+            
+            <ul class="footer-links">
+            
+            <li><a href="https://solace.ist.rit.edu/~iste240t05/index.php">Homepage</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/whylearn.php">Why Learn Unix?</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/beginners.php">Unix for Beginners</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/basic.php">Basic Command List</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/advanced.php">Advanced Command List</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/history.php">History of Unix</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/videos.php">Videos</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/written.php">Written</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/stepbystep.php">Step by Step</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/quiz.php">Quiz</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/otherexer.php">Other Exercises</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/who.php">Who are we?</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/contact.php">Contact Us</a></li>
+                <li><a href="https://solace.ist.rit.edu/~iste240t05/review.php">Reviews/Comments</a></li>
+            </ul>
+          </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright © 2023 All Rights Reserved by 
+         <a href="https://solace.ist.rit.edu/~iste240t05/index.php">Raisin Bran.</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+</div></footer>
+</body></html>

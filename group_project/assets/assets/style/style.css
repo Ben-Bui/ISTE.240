@@ -45,14 +45,11 @@ h2{
     box-shadow: 0 0 10px rgba(0,0,0,0.3), 0 0 300px 25px rgba(222,198,122,0.7) inset;
     height: 80%;
     width:80%;
-    padding-right: 10%;
+    margin: 5%;
     padding: 24px;
     position: relative;
     margin-bottom: 10%;
     margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 10%;
-    padding-left: 10%;
 }
 
 
@@ -104,7 +101,6 @@ footer{
   padding: 0;
   background-color: #593d3b;
   text-align: center;
-  z-index: 2;
 }
 
 /*section{
@@ -127,6 +123,7 @@ footer{
 
 
 .curPage{
+    float: right;
     text-decoration: underline;
     display: absolute;
 }
@@ -136,7 +133,7 @@ footer{
         height: 100%;
         width: 0;
         position: fixed; 
-        z-index: 3; 
+        z-index: 2; 
         left: 0;
         top: 0;
         background-color: rgb(0,0,0); /* Black fallback color */
@@ -294,10 +291,6 @@ footer{
       .containerT.right .long-date {
         left: -100px;
       }
-
-      .containerT.left .long-date {
-        left: -100px;
-      }
       
       .containerT.left .icon {
         right: 56px;
@@ -345,13 +338,6 @@ footer{
         padding-left: 20%;
       }
       
-      /*sytling for link containers on written.php and othersource.php */
-      .externalLink{
-        color: black;
-        text-decoration: none;
-        width: 80%;
-      }
-
       @media (max-width: 1460px) {
         .timeline::after {
           left: 105px;
@@ -406,13 +392,6 @@ footer{
           padding: 125px 100px 100px 90px;
           border-radius: 500px 500px 500px 500px;
         }
-      }
-      .containerT.right .long-date {
-        left: -40px;
-      }
-
-      .containerT.left .long-date {
-        left: -70px;
       }
      
       

@@ -27,3 +27,21 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+// Validate function Ben
+
+function validate(){
+  name = document.getElementById("name").value;
+  age = document.getElementById("age").value;
+  age = parseInt(age)
+  
+  if(name == ""){
+      alert("Please fill in a name");
+      return false
+  }
+  
+  if(!Number.isInteger(age)){
+      alert("age must be numeric");
+      return false
+  }
+  return true;
+}
